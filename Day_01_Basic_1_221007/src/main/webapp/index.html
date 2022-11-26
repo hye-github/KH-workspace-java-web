@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Space</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #title {
+      text-align: left;
+    }
+
+    #title:hover {
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .writer:hover {
+      color: #666666;
+      cursor: pointer;
+    }
+
+    .alert {
+      background: #fff;
+      vertical-align: middle;
+    }
+
+    .titleline>div {
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    div {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    i {
+      margin-top: 15px;
+    }
+
+    .bg-secondary {
+      --badge-color: #999999;
+    }
+
+    .btn-bd-secondary {
+      --bs-btn-font-weight: 500;
+      --bs-btn-font-size: 12px;
+      --bs-btn-padding-x: 10px;
+      --bs-btn-padding-y: 3px;
+      --bs-btn-border-color: #333333;
+      --bs-btn-color: #333333;
+      --bs-btn-bg: white;
+      --bs-btn-hover-bg: #999999;
+      --bs-btn-hover-color: white;
+    }
+
+    .pagination {
+      --bs-pagination-color: #333333;
+      --bs-pagination-active-bg: #999999;
+      --bs-pagination-active-border-color: #999999;
+      --bs-pagination-hover-color: #333333;
+      --bs-pagination-font-size: 14px;
+    }
+
+    .cate {
+      margin-top: 50px;
+    }
+
+    .board {
+      margin-top: 10px;
+    }
+
+    .collapse {
+      font-size: 25px;
+    }
+
+    .nav {
+      --bs-nav-link-color: #666666;
+      --bs-nav-link-hover-color: #222222;
+      --bs-nav-link-font-size: 14px;
+    }
+
+    .nav-pills {
+      --bs-nav-pills-link-active-bg: #999999;
+    }
+
+    .header {
+      margin-top: 20px;
+    }
+
+    .logo {
+      padding: 0;
+    }
+
+    .logo>img {
+      width: 100%;
+    }
+
+    .nav-item {
+      margin-left: 10px;
+    }
+
+    .btn-secondary {
+      --bs-btn-font-weight: 500;
+      --bs-btn-font-size: 15px;
+      --bs-btn-padding-x: 9px;
+      --bs-btn-padding-y: 3px;
+      --bs-btn-border-color: #333333;
+      --bs-btn-color: #333333;
+      --bs-btn-bg: white;
+      --bs-btn-hover-bg: #999999;
+      --bs-btn-hover-color: white;
+    }
+
+    .menu {
+      font-size: 22px;
+      font-weight: 500;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .menu {
+      vertical-align: middle;
+    }
+
+    .line {
+      height: 1px;
+      background: #999999;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    .search {
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      padding: 10%
+    }
+
+    .card-title {
+      margin-top: 30px;
+    }
+
+    .carousel {
+      margin-bottom: 50px;
+    }
+
+    .bottom {
+      padding: 20px;
+      background-color: #99999930;
+    }
+
+    .bottom>p {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .news {
+      margin-top: 30px;
+      margin-bottom: 70px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .table {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row header">
+      <div class="col-2 col-md-2 col-lg-2 logo position-relative">
+        <img class="position-absolute top-50 start-50 translate-middle d-none d-sm-block" src="img/logo.png">
+        <img class="position-absolute top-50 start-50 translate-middle d-block d-sm-none" src="img/minilogo.png">
+      </div>
+
+      <div class="col-8 col-md-8 col-lg-6 menu">
+        <div>
+
+          <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand d-block d-md-none" href="#"><strong>Menu</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><strong>홈</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">기업리뷰</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">채용공고</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- <div class="col-9 col-md-5 menu position-relative">
+        <div class="position-absolute top-50 start-50 translate-middle" style="width: 100%"> -->
+          <!-- <span class="align-bottom menu">&nbsp<strong>홈</strong>&nbsp&nbsp기업리뷰&nbsp&nbsp채용공고</span> -->
+        </div>
+      </div>
+      <div class="col-2 col-md-2 col-lg-4 text-center position-relative aglinright">
+
+        <div class="position-absolute top-50 start-50 translate-middle d-block d-lg-none">
+          <i class="bi bi-person align-middle" style="font-size: 25px;"></i>
+        </div>
+
+
+        <div class="position-absolute top-50 end-0 translate-middle d-none d-lg-block">
+          <button class="btn btn-outline-secondary" type="submit">로그인</button>
+          <button class="btn btn-outline-secondary" type="submit">회원가입</button>
+          <!-- <button type="button" class="btn btn-secondary">로그인</button>
+          <button type="button" class="btn btn-secondary">회원가입</button> -->
+        </div>
+
+      </div>
+
+      <div class="col-12 line"></div>
+
+      <div class="col-12">
+
+        <div class="row">
+
+          <div class="col-12 col-lg-8 search">
+            <div class="row">
+              <div class="col-12 search">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="관심있는 검색어를 입력해보세요!" aria-label="Search">
+                  <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="img/brand_naver.jpg" class="card-img-top" alt="brand">
+                  <div class="card-body">
+                    <h5 class="card-title">네이버</h5>
+                    <p class="card-text">공모전 수상자 대상 신입/경력 AI 인력 채용</p>
+                    <a class="btn btn-secondary" href="#" role="button">바로가기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/brand_nexon.png" class="card-img-top" alt="brand">
+                  <div class="card-body">
+                    <h5 class="card-title">넥슨</h5>
+                    <p class="card-text">채용 연계형 인턴 및 경력직 모집</p>
+                    <a class="btn btn-secondary" href="#" role="button">바로가기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/brand_lg.png" class="card-img-top" alt="brand">
+                  <div class="card-body">
+                    <h5 class="card-title">엘지</h5>
+                    <p class="card-text">2022년 하반기 경력 사원 채용</p>
+                    <a class="btn btn-secondary" href="#" role="button">바로가기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/brand_sk.png" class="card-img-top" alt="brand">
+                  <div class="card-body">
+                    <h5 class="card-title">SK텔레콤</h5>
+                    <p class="card-text">IT 개발자 채용</p>
+                    <a class="btn btn-secondary" href="#" role="button">바로가기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- board start -->
+
+            <div class="cate d-none d-md-block">
+              <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">전체</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">취업이직</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">연봉고민</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">회사생활</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">자기개발</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="board alert alert-secondary" role="alert">
+              <div class="row text-center titleline">
+                <div class="col-md-1 no d-none d-md-block">번호</div>
+                <div class="col-12 col-md-6 title"><span class="d-none d-md-block">게시글</span><span
+                    class="d-block d-md-none">전체 글 보기</span></div>
+                <div class="col-md-2 writer d-none d-md-block">작성자</div>
+                <div class="col-md-1 hits d-none d-md-block">조회</div>
+                <div class="col-md-2 date d-none d-md-block">등록일</div>
+              </div>
+              <hr>
+              <div class="row text-center">
+                <div class="col-12 col-md-1 no d-none d-md-block">10</div>
+                <div class="col-12 col-md-6 title text-truncate" id="title">
+                  <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                  컴퓨터 석사 졸업해서 미래가 보장 되려나&nbsp&nbsp<span class="badge bg-danger">NEW</span>
+                </div>
+                <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 새회사</i><span
+                    class="d-none d-md-block"> 새회사</span></div>
+                <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 7</i><span
+                    class="d-none d-md-block"> 7</span></div>
+                <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 5분 전</i><span
+                    class="d-none d-md-block"> 5분 전</span></div>
+              </div>
+              <hr>
+              <div class="row text-center">
+                <div class="col-12 col-md-1 no d-none d-md-block">9</div>
+                <div class="col-12 col-md-6 title text-truncate" id="title">
+                  <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                  연봉 1억주는데 스타트업이면&nbsp&nbsp<span class="badge bg-danger">NEW</span>
+                </div>
+                <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 스타트업</i><span
+                    class="d-none d-md-block"> 스타트업</span></div>
+                <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 23</i><span
+                    class="d-none d-md-block"> 23</span></div>
+                <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 1시간 전</i><span
+                    class="d-none d-md-block"> 1시간 전</span></div>
+              </div>
+              <hr>
+              <div class="row text-center">
+                <div class="col-12 col-md-1 no d-none d-md-block">8</div>
+                <div class="col-12 col-md-6 title text-truncate" id="title">
+                  <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                  형누나들같으면 뭐 선택해?&nbsp&nbsp<span class="badge bg-danger">NEW</span>
+                </div>
+                <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> Nexon</i><span
+                    class="d-none d-md-block"> Nexon</span></div>
+                <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 143</i><span
+                    class="d-none d-md-block"> 143</span></div>
+                <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 11시간 전</i><span
+                    class="d-none d-md-block"> 11시간 전</span></div>
+              </div>
+
+              <div class="d-none d-md-block">
+                <hr>
+                <div class="row text-center">
+                  <div class="col-12 col-md-1 no d-none d-md-block">7</div>
+                  <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                    마이다스 이직 어떤가요?&nbsp&nbsp<span class="badge bg-danger">NEW</span>
+                  </div>
+                  <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 마크로젠</i><span
+                      class="d-none d-md-block"> 마크로젠</span></div>
+                  <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 81</i><span
+                      class="d-none d-md-block"> 81</span></div>
+                  <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 17시간 전</i><span
+                      class="d-none d-md-block"> 17시간 전</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-12 col-md-1 no d-none d-md-block">6</div>
+                  <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                    스타트업 이직 어떻게 생각하시나요?
+                  </div>
+                  <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 티몬과품바</i><span
+                      class="d-none d-md-block"> 티몬과품바</span></div>
+                  <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 100</i><span
+                      class="d-none d-md-block"> 100</span></div>
+                  <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-22</i><span
+                      class="d-none d-md-block"> 09-22</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-12 col-md-1 no d-none d-md-block">5</div>
+                  <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">연봉고민</button>&nbsp&nbsp
+                    대한통운 개발자 연봉 짠편인가요?
+                  </div>
+                  <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 빗썸코리아</i><span
+                      class="d-none d-md-block"> 빗썸코리아</span></div>
+                  <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 252</i><span
+                      class="d-none d-md-block"> 252</span></div>
+                  <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-22</i><span
+                      class="d-none d-md-block"> 09-22</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-12 col-md-1 no d-none d-md-block">4</div>
+                  <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">회사생활</button>&nbsp&nbsp
+                    같은 회사인데 누구는 커리어 쌓고 누구는 무덤
+                  </div>
+                  <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 다원시스</i><span
+                      class="d-none d-md-block"> 다원시스</span></span></div>
+                  <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 263</i><span
+                      class="d-none d-md-block"> 263</span></span></div>
+                  <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-22</i><span
+                      class="d-none d-md-block"> 09-22</span></span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-12 col-md-1 no d-none d-md-block">3</div>
+                  <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">자기개발</button>&nbsp&nbsp
+                    오픽 인강 추천좀 부탁해
+                  </div>
+                  <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 새회사</i><span
+                      class="d-none d-md-block"> 새회사</span></div>
+                  <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 116</i><span
+                      class="d-none d-md-block"> 116</span></div>
+                  <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-21</i><span
+                      class="d-none d-md-block"> 09-21</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-12 col-md-1 no d-none d-md-block">2</div>
+                  <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                    다른회사로 이직하려는데 퇴사 얘기 언제해?
+                  </div>
+                  <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 스타트업</i><span
+                      class="d-none d-md-block"> 스타트업</span></div>
+                  <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 234</i><span
+                      class="d-none d-md-block"> 234</span></div>
+                  <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-21</i><span
+                      class="d-none d-md-block"> 09-21</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-12 col-md-1 no d-none d-md-block">1</div>
+                  <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">회사생활</button>&nbsp&nbsp
+                    주 40시간 자율출퇴근제 하는 회사
+                  </div>
+                  <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> LG생활건강</i><span
+                      class="d-none d-md-block"> LG생활건강</span></div>
+                  <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 321</i><span
+                      class="d-none d-md-block"> 321</span></div>
+                  <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-21</i><span
+                      class="d-none d-md-block"> 09-21</span></div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="d-none d-md-block">
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                  </li>
+                  <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="d-block d-md-none">
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+
+
+          <!-- board end -->
+
+          <div class="col-12 col-md-12 col-lg-4">
+
+            <div class="news">
+              <h5><strong>가장 많이 본 이슈</strong></h5>
+
+              <table class="table table-hover">
+
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>[채용공고 집중해부] SKC family</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>직장인 여러분, 일하기 싫을 때 보세요</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>수습3→4개월로 연장 통보…싫으면 퇴사하라고?</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>상사가 절 이유없이 싫어하는 것 같아요</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>일하기 좋은 클라우드 기업 BEST 20</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>내 MBTI와 잘 맞는 회사는 어디?</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>한 지붕, 다른 평가…대기업 계열사별 만족도 순위는?</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>합격하는 이력서는 이게 달랐다</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td text-truncate>빅데이터로 본 일하기 좋은 기업 100</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>삼성전자는 채용 중…MBTI는?</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+            <div class="cardnews">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/bn01.jpg" class="d-block w-100" alt="banner">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/bn02.jpg" class="d-block w-100" alt="banner">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/bn03.jpg" class="d-block w-100" alt="banner">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="col-12 bottom">
+    <nav class="nav justify-content-center">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <a class="nav-link" href="#">서비스</a>
+      <a class="nav-link" href="#">소개</a>
+      <a class="nav-link" href="#">이용약관</a>
+      <a class="nav-link" href="#">디렉토리</a>
+      <a class="nav-link" href="#">개인정보 처리방침</a>
+      <a class="nav-link" href="#">기업서비스</a>
+      <a class="nav-link" href="#">신고가이드</a>
+    </nav>
+    <p style="text-align:center;">© 2022 Job Space.</p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <style>    
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+        * {
+          box-sizing: border-box;
+          font-family: 'Noto Sans KR', sans-serif;}
+       
+        #title {
+            text-align: left;
+        }
+        #title:hover{font-weight: 700;
+            cursor: pointer;}
+
+        .writer:hover{color: #666666;
+            cursor: pointer;}
+
+        .alert {
+            background: #fff;
+            vertical-align: middle;
+        }
+
+        .titleline>div {
+            font-size: 15px;
+            font-weight: 900;
+        }
+
+        div {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        i {
+            margin-top: 15px;
+        }
+
+        .bg-secondary {
+            --badge-color: #999999;
+        }
+
+        .btn-bd-secondary {
+            --bs-btn-font-weight: 500;
+            --bs-btn-font-size: 12px;
+            --bs-btn-padding-x: 10px;
+            --bs-btn-padding-y: 3px;
+            --bs-btn-border-color: #333333;
+            --bs-btn-color: #333333;
+            --bs-btn-bg: white;
+            --bs-btn-hover-bg: #999999;
+            --bs-btn-hover-color: white;
+        }
+
+        .pagination{
+            --bs-pagination-color:#333333;
+            --bs-pagination-active-bg:#999999;
+            --bs-pagination-active-border-color:#999999;
+            --bs-pagination-hover-color:#333333;
+            --bs-pagination-font-size: 14px;
+        }
+
+        .cate{margin-top: 20px;}
+
+        .board{margin-top: 10px;}
+
+
+        .nav{
+        --bs-nav-link-color: #666666;
+        --bs-nav-link-hover-color: #222222;
+        --bs-nav-link-font-size : 14px;
+        }
+        .nav-pills{
+        --bs-nav-pills-link-active-bg: #999999;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="cate d-none d-md-block">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">전체</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">취업이직</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">연봉고민</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">회사생활</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">자기개발</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="board alert alert-secondary" role="alert">
+            <div class="row text-center titleline">
+                <div class="col-md-1 no d-none d-md-block">번호</div>
+                <div class="col-12 col-md-6 title"><span class="d-none d-md-block">게시글</span><span class="d-block d-md-none">전체 글 보기</span></div>
+                <div class="col-md-2 writer d-none d-md-block">작성자</div>
+                <div class="col-md-1 hits d-none d-md-block">조회</div>
+                <div class="col-md-2 date d-none d-md-block">등록일</div>
+            </div>
+            <hr>
+            <div class="row text-center">
+                <div class="col-12 col-md-1 no d-none d-md-block">10</div>
+                <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                    컴퓨터 석사 졸업해서 미래가 보장 되려나&nbsp&nbsp<span class="badge bg-danger">NEW</span>
+                </div>
+                <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 새회사</i><span
+                        class="d-none d-md-block"> 새회사</span></div>
+                <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 7</i><span
+                        class="d-none d-md-block"> 7</span></div>
+                <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 5분 전</i><span
+                        class="d-none d-md-block"> 5분 전</span></div>
+            </div>
+            <hr>
+            <div class="row text-center">
+                <div class="col-12 col-md-1 no d-none d-md-block">9</div>
+                <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                    연봉 1억주는데 스타트업이면&nbsp&nbsp<span class="badge bg-danger">NEW</span>
+                </div>
+                <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 스타트업</i><span
+                        class="d-none d-md-block"> 스타트업</span></div>
+                <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 23</i><span
+                        class="d-none d-md-block"> 23</span></div>
+                <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 1시간 전</i><span
+                        class="d-none d-md-block"> 1시간 전</span></div>
+            </div>
+            <hr>
+            <div class="row text-center">
+                <div class="col-12 col-md-1 no d-none d-md-block">8</div>
+                <div class="col-12 col-md-6 title text-truncate" id="title">
+                    <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                    형누나들같으면 뭐 선택해?&nbsp&nbsp<span class="badge bg-danger">NEW</span>
+                </div>
+                <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> Nexon</i><span
+                        class="d-none d-md-block"> Nexon</span></div>
+                <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 143</i><span
+                        class="d-none d-md-block"> 143</span></div>
+                <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 11시간 전</i><span
+                        class="d-none d-md-block"> 11시간 전</span></div>
+            </div>
+
+            <div class="d-none d-md-block">
+                <hr>
+                <div class="row text-center">
+                    <div class="col-12 col-md-1 no d-none d-md-block">7</div>
+                    <div class="col-12 col-md-6 title text-truncate" id="title">
+                        <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                        마이다스 이직 어떤가요?&nbsp&nbsp<span class="badge bg-danger">NEW</span>
+                    </div>
+                    <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 마크로젠</i><span
+                            class="d-none d-md-block"> 마크로젠</span></div>
+                    <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 81</i><span
+                            class="d-none d-md-block"> 81</span></div>
+                    <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 17시간 전</i><span
+                            class="d-none d-md-block"> 17시간 전</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-12 col-md-1 no d-none d-md-block">6</div>
+                    <div class="col-12 col-md-6 title text-truncate" id="title">
+                        <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                        스타트업 이직 어떻게 생각하시나요?</div>
+                    <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 티몬과품바</i><span
+                            class="d-none d-md-block"> 티몬과품바</span></div>
+                    <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 100</i><span
+                            class="d-none d-md-block"> 100</span></div>
+                    <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-22</i><span
+                            class="d-none d-md-block"> 09-22</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-12 col-md-1 no d-none d-md-block">5</div>
+                    <div class="col-12 col-md-6 title text-truncate" id="title">
+                        <button type="button" class="btn btn-bd-secondary">연봉고민</button>&nbsp&nbsp
+                        대한통운 개발자 연봉 짠편인가요?</div>
+                    <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 빗썸코리아</i><span
+                            class="d-none d-md-block"> 빗썸코리아</span></div>
+                    <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 252</i><span
+                            class="d-none d-md-block"> 252</span></div>
+                    <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-22</i><span
+                            class="d-none d-md-block"> 09-22</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-12 col-md-1 no d-none d-md-block">4</div>
+                    <div class="col-12 col-md-6 title text-truncate" id="title">
+                        <button type="button" class="btn btn-bd-secondary">회사생활</button>&nbsp&nbsp
+                        같은 회사인데 누구는 커리어 쌓고 누구는 무덤</div>
+                    <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 다원시스</i><span
+                            class="d-none d-md-block"> 다원시스</span></span></div>
+                    <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 263</i><span
+                            class="d-none d-md-block"> 263</span></span></div>
+                    <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-22</i><span
+                            class="d-none d-md-block"> 09-22</span></span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-12 col-md-1 no d-none d-md-block">3</div>
+                    <div class="col-12 col-md-6 title text-truncate" id="title">
+                        <button type="button" class="btn btn-bd-secondary">자기개발</button>&nbsp&nbsp
+                        오픽 인강 추천좀 부탁해</div>
+                    <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 새회사</i><span
+                            class="d-none d-md-block"> 새회사</span></div>
+                    <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 116</i><span
+                            class="d-none d-md-block"> 116</span></div>
+                    <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-21</i><span
+                            class="d-none d-md-block"> 09-21</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-12 col-md-1 no d-none d-md-block">2</div>
+                    <div class="col-12 col-md-6 title text-truncate" id="title">
+                        <button type="button" class="btn btn-bd-secondary">취업이직</button>&nbsp&nbsp
+                        다른회사로 이직하려는데 퇴사 얘기 언제해?</div>
+                    <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> 스타트업</i><span
+                            class="d-none d-md-block"> 스타트업</span></div>
+                    <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 234</i><span
+                            class="d-none d-md-block"> 234</span></div>
+                    <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-21</i><span
+                            class="d-none d-md-block"> 09-21</span></div>
+                </div>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-12 col-md-1 no d-none d-md-block">1</div>
+                    <div class="col-12 col-md-6 title text-truncate" id="title">
+                        <button type="button" class="btn btn-bd-secondary">회사생활</button>&nbsp&nbsp
+                        주 40시간 자율출퇴근제 하는 회사</div>
+                    <div class="col-5 col-md-2 writer"><i class="bi bi-pen d-block d-md-none"> LG생활건강</i><span
+                            class="d-none d-md-block"> LG생활건강</span></div>
+                    <div class="col-2 col-md-1 hits"><i class="bi bi-eye d-block d-md-none"> 321</i><span
+                            class="d-none d-md-block"> 321</span></div>
+                    <div class="col-5 col-md-2 date"><i class="bi bi-clock-history d-block d-md-none"> 09-21</i><span
+                            class="d-none d-md-block"> 09-21</span></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <div class="d-none d-md-block">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="d-block d-md-none">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

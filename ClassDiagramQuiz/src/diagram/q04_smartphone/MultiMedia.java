@@ -1,0 +1,9 @@
+package diagram.q04_smartphone;
+
+public interface MultiMedia {
+
+		void youtube();
+		void movie();
+		void music();
+		
+}

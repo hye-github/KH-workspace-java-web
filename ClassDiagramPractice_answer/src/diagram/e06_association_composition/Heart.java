@@ -1,0 +1,5 @@
+package diagram.e06_association_composition;
+
+public class Heart {
+
+}

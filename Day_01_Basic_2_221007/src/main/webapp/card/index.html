@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<title>몬스터 카드</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/data.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div id="tooltip"></div>
+	<div id="card_wrap">
+		<div id="msg">
+			<p>몬스터 이미지 클릭시 카드1, 카드2 중 비어있는 칸에 등록이 되며, 선택된 카드의 조합이 카드3에 보여집니다.</p>
+			<p>카드1, 카드2의 우측상단 x를 누르면 해당 카드가 삭제되며 카드3의 우측상단 클릭시 모든 카드가 삭제됩니다.</p>
+			<p>몬스터 이름 및 카드1,2,3의 몬스터 이미지 클릭시(또는 몬스터 이미지 더블클릭시) 해당 몬스터가 나올 수 있는 조합 리스트를 보여줍니다.</p>
+		</div>
+		<div id="card_icon">
+			<div id="card_btn"></div>
+		</div>
+		<div id="card_field">
+			<div id="plus"></div><div id="sum"></div>
+			<ul>
+				<li id="carda" class="default"></li>
+				<li id="cardb" class="default"></li>
+				<li id="cardc" class="default"></li>
+			</ul>
+		</div>
+		<div id="card_test"></div>
+		<div id="card_apart"></div>
+		<div id="view_wrap">
+			<div id="view"></div>
+			<span class='view_hide'>×</span>
+		</div>
+		<div id="skill_field"><h2 class="smt20 size16">스킬 별 카드 보기</h2><ul></ul></div>
+		<div id="monster_wrap">
+			<h2 class="btn1">몬스터카드 전체 도감보기</h2>
+			<ul id="monster_field"></ul>
+		</div>
+	</div>
+</body>
+</html>

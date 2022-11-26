@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Gamja Flower', cursive;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 400px;
+            height: 100%;
+            margin: auto;
+            border: 1px solid #B1B2FF;
+            border-radius: 20px 20px 20px 20px;
+            position: relative;
+        }
+
+        #box0 {
+            height: 50px;
+            padding: 8px;
+            background-color: #B1B2FF;
+            border-radius: 20px 20px 0 0;
+        }
+
+        #box1 {
+            height: 500px;
+            padding: 0 0 0 15px;
+            background-color: #EEF1FF;
+        }
+
+        #chat {
+            height: 100%;
+            overflow-y:scroll;
+            padding: 10px;
+        }
+
+        #box2 {
+            height: 150px;
+            background-color: #D2DAFF;
+            border-radius: 0 0 20px 20px;
+            border-top: 1px solid #B1B2FF;
+            color: #5f5f8d;
+            padding: 15px;
+        }
+
+        #chat::-webkit-scrollbar,#inputKey::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        #chat::-webkit-scrollbar-thumb {
+            background-color: #dae1ff;
+            border-radius: 10px;
+        }
+
+        #chat::-webkit-scrollbar-track,#inputKey::-webkit-scrollbar-track {
+            background-color: none;
+        }
+
+        #inputKey::-webkit-scrollbar-thumb {
+            background-color: #e1e7ff;
+            border-radius: 10px;
+        }
+
+        #inputKey {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        select {
+            margin: 0px;
+            border-style: none;
+        }
+
+        select:focus {
+            outline: none;
+        }
+
+        .editor-menu {
+            text-align: center;
+            padding: 5px;
+            background-color: #EEF1FF;
+        }
+
+        .receiver {
+            background-color: white;
+            color: #a4a5de;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .sender {
+            background-color: #c4c5fa;
+            color: white;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .button-74 {
+            background-color: white;
+            border: 2px solid #B1B2FF;
+            border-radius: 30px;
+            color: #B1B2FF;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 0 5px;
+            line-height: 30px;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-74:hover {
+            background-color: #fff;
+        }
+
+        .button-74:active {
+            background-color: #EEF1FF;
+            box-shadow: #B1B2FF 2px 2px 0 0;
+            transform: translate(2px, 2px);
+        }
+
+        @media (min-width: 768px) {
+            .button-74 {
+                min-width: 20px;
+                padding: 0 15px;
+            }
+        }
+
+        [contenteditable="true"]:focus {
+            outline: none;
+        }
+
+        img{width: 80px;}
+
+        #emojibox{width: 100px; position:absolute; left: 400px; bottom:-11px; text-align: center; display: none; border: 1px dotted #9192df; border-radius: 30px; margin: 10px; padding: 10px;}
+
+        #emojibox>img{cursor: pointer;}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="box0" style="position: relative;">
+            <button class="button-74">
+                <select id="idSelect">
+                    <option value="sender" selected>sender</option>
+                    <option value="receiver">receiver</option>
+                </select>
+            </button>
+            <div style="position: absolute; top: 8px; right: 8px;">
+                <button class="button-74">_</button>
+                <button class="button-74">X</button>
+            </div>
+        </div>
+        <div id="box1">
+            <div id="chat"></div>
+        </div>
+        <div id="icon"></div>
+
+        <div class="editor-menu">
+            <button id="btn-bold" class="button-74">
+                <b>B</b>
+            </button>
+            <button id="btn-italic" class="button-74">
+                <i>I</i>
+            </button>
+            <button id="btn-underline" class="button-74">
+                <u>U</u>
+            </button>
+            <button id="btn-strike" class="button-74">
+                <s>S</s>
+            </button>
+            <button id="btn-image" class="button-74">
+                IMG
+            </button>
+            <button id="btn-emoji" class="button-74">
+                EMOJI
+            </button>
+        </div>
+
+        <div id="box2">
+            <div id="inputKey" contenteditable="true"></div>
+        </div>
+        <div id="emojibox">
+            <img src="https://i.postimg.cc/6ys2VtMx/icon01.gif" id="icon01" class="emoji" tabindex="-1">
+            <img src="https://i.postimg.cc/4KFnYgYM/icon02.gif" id="icon02" class="emoji" tabindex="-1">
+            <img src="https://i.postimg.cc/BjpjGD4J/icon03.gif" id="icon03" class="emoji" tabindex="-1">
+            <img src="https://i.postimg.cc/fVDVF54H/icon04.gif" id="icon04" class="emoji" tabindex="-1">
+            <img src="https://i.postimg.cc/WD4hp31g/icon05.gif" id="icon05" class="emoji" tabindex="-1">
+            <!-- <img src="icon01.gif" id="icon01" class="emoji">
+            <img src="icon02.gif" id="icon02" class="emoji">
+            <img src="icon03.gif" id="icon03" class="emoji">
+            <img src="icon04.gif" id="icon04" class="emoji">
+            <img src="icon05.gif" id="icon05" class="emoji"> -->
+            <button class="button-74" id="emojiboxX">X</button>
+        </div>
+    </div>
+    
+    <script>
+
+        $("#inputKey").on("keydown", function (key) {
+            if (key.keyCode == 13 && key.shiftKey == false) {
+
+                if ($("#idSelect option:selected").val() == "receiver") {
+                    let date = new Date();
+                    let dateSpan = $("<span>");
+                    dateSpan.css("font-size","12px").css("color","#B1B2FF");
+                    dateSpan.append("&nbsp;&nbsp;").append(date.getHours()).append("시&nbsp;").append(date.getMinutes()).append("분");
+
+                    let receiverDiv = $("<div>");
+                    receiverDiv.addClass("receiver");
+                    receiverDiv.append($("#inputKey").html());
+                    if($("#inputKey").html() != ""){
+                        $("#chat").append(receiverDiv).append(dateSpan).append("<br>");
+                        $("#inputKey").html("");
+                        $("#chat").scrollTop($("#chat").prop("scrollHeight"));
+                    };
+
+                } else if ($("#idSelect option:selected").val() == "sender") {
+                    let date = new Date();
+                    let dateSpan = $("<span>");
+                    dateSpan.css("font-size","12px").css("color","#B1B2FF");
+                    dateSpan.append(date.getHours()).append("시&nbsp;").append(date.getMinutes()).append("분&nbsp;&nbsp;");
+
+                    let senderDiv = $("<div>");
+                    senderDiv.addClass("sender");
+                    senderDiv.append($("#inputKey").html());
+
+                    let senderDivR = $("<div>");
+                    senderDivR.append(dateSpan).append(senderDiv);
+                    senderDivR.css("text-align", "right")
+                    if($("#inputKey").html() != ""){
+                        $("#chat").append(senderDivR);
+                        $("#inputKey").html("");
+                        $("#chat").scrollTop($("#chat").prop("scrollHeight"));
+                    };
+                }
+
+                return false;
+            };
+        });
+
+        $("#btn-bold").on("click", function () {
+            document.execCommand('bold');
+            $("#inputKey").focus();
+        });
+
+        $("#btn-italic").on("click", function () {
+            document.execCommand('italic');
+            $("#inputKey").focus();
+        });
+
+        $("#btn-underline").on("click", function () {
+            document.execCommand('underline');
+            $("#inputKey").focus();
+        });
+
+        $("#btn-strike").on("click", function () {
+            document.execCommand('strikeThrough')
+            $("#inputKey").focus();
+        });
+
+        $("#btn-emoji").on("click", function () {
+            $("#emojibox").slideDown(500); 
+            $("#inputKey").focus();
+        });
+
+        $("#emojiboxX").on("click", function () {
+            $("#emojibox").slideUp(500);
+            let caret = $("<input>");
+            $("#inputKey").append(caret);
+            caret.focus();
+            caret.remove();
+            $("#inputKey").focus();
+        });
+
+
+        $("#emojibox").on("click",".emoji",function(){
+            
+            // let msg = $("#inputKey").html();
+            // let spos = $("#inputKey").prop("selectionStart");
+            // let epos = $("#inputKey").prop("selectionEnd");
+            // let msg1 = msg.substring(0, spos);
+            // let msg2 = msg.substring(epos, msg.length);
+
+            // let emoji = $("<a>");
+            // emoji.append($(this).clone());
+
+            // $("#inputKey").html(msg1).html(emoji).html(msg2);
+            // spos = spos + emoji.length;
+            // $("#inputKey").prop("selectionEnd", spos).focus();
+
+            $("#inputKey").append("<a>").append($(this).clone());
+            $("#inputKey").scrollTop($("#inputKey").prop("scrollHeight"));
+            let caret = $("<input>");
+            $("#inputKey").append(caret);
+            caret.focus();
+            caret.remove();
+            $("#inputKey").focus();
+        });
+        
+    </script>
+
+</body>
+
+</html>

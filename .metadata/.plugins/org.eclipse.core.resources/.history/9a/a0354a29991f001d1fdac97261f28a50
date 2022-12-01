@@ -1,0 +1,27 @@
+package midlevel;
+
+import java.util.ArrayList;
+
+public class Manager { // 설계도
+	
+		private ArrayList member = new ArrayList(); // import 해야함
+		
+	
+		private int index = 0;
+		
+		public void addMember() {
+			member.get(this.index++);
+		}
+		
+		
+		
+		
+		public Object getMembers() {
+			return member.get(this.index++);
+		}
+		
+		public int getIndex() {
+			return member.size();
+		}
+		
+}

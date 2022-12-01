@@ -1,0 +1,13 @@
+
+public class Tv {
+
+	public int volume;
+	private int channel;
+	
+
+	
+	// 정보은닉
+	// public / protected / package / private - ( 접근제한자 )
+	// : 필드나 메서드 앞에 붙이는 키워드 / 붙일 때 어떠한 현상이 일어남
+	
+}

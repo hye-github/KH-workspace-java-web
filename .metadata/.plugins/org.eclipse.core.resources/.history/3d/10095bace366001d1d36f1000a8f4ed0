@@ -1,0 +1,7 @@
+package diagram.e03_realization;
+
+public class ExternalHdd implements USBTpye{
+
+	
+	
+}

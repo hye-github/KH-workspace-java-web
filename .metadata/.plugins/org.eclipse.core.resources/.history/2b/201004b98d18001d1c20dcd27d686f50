@@ -1,0 +1,26 @@
+
+public class Test {
+
+
+	// 메서드 문법(정정)
+
+	public static int plus(int num1, int num2) { // parameter -> 인수값 / 파라미터 / 매개변수
+
+		int result = num1 + num2;
+		return result;
+	}
+
+	public static void main(String[] args) { 
+
+		// main의 콜되는 지점은 우리가 부를 수 없고, 윈도우가 콜한다.
+		// 우리한테는 매개변수 인자값을 넣을 수가 없다.
+		// 메인을 콜할 수 없으나, 프로그램을 실행 시킬 때 값을 전달할 수 있다.
+
+
+		plus(10,5); // argument -> 인자값 / 아규먼트 / 전달인자 // 리턴값으로 봐야함(인트값 15로)
+
+		//			String name = sc.nextLine() + plus(10,5); // 자연스럽게 스트링값 + 15(자동 프로모션) = 스트링값15			
+		//			Integer.parseInt(sc.nextLine()) + Math.random(); // 입력된값>인트(자동 프로모션) + 더블형랜덤값 = 더블형값
+
+	}
+}

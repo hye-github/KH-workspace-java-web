@@ -1,0 +1,8 @@
+
+public class Movie {
+	
+	string title;
+	string genre;
+	int grade;
+	
+}

@@ -1,0 +1,12 @@
+package diagram.q02_car;
+
+public class Car {
+	private Frame frame;
+	private Engine engine;
+	private Wheel wheel;
+	 
+	public Car(Frame frame, Engine engine, Wheel wheel) {
+		
+	}
+	
+}

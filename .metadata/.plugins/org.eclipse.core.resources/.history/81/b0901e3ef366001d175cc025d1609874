@@ -1,0 +1,11 @@
+package diagram.q04_smartphone;
+
+public class Calculator implements Smartphone {
+
+	@Override
+	public void calculate() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

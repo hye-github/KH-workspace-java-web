@@ -1,0 +1,21 @@
+package midlevel;
+
+// 클래스 간의 관계
+// Has-A 포함관계	-> A Has a B
+// IS-A 상속관계	-> A Is a B
+
+//Tiger is a [animal]
+//Bear is a [animal]
+//		
+//Gold is a [member]
+//Silver is a [member]
+		
+
+public class Gold extends Member{ // Gold 클래스가 Member 클래스로 확장하겠다.
+
+	public Gold(int id, String name, int point) {
+
+		// 3. 멤버 생성자가 필요함.
+		super(id,name,point); // super(); 자신의 부모클래스의 생성자를 콜해주세요. 라는 뜻
+	
+}

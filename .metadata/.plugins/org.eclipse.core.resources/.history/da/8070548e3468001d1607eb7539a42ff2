@@ -1,0 +1,22 @@
+package diagram.q05_shopping;
+
+public class ShopKeeper {
+
+	public int makeBillPaper() {
+		return 0;
+	};
+
+	
+	
+	public void calculate() {
+		Calculator calculate = new Calculator();
+	}
+	
+	public void item() {
+		Item item = new Item();
+	}
+	
+
+	
+	
+}

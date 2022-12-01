@@ -1,0 +1,12 @@
+1662337490373	Delete element
+1662343801283	Rename type 'Exam_01'
+1662343813937	Rename type 'Exam_insert'
+1662343822831	Rename type 'Exam_Delete'
+1662343829299	Rename type 'Exam_Update'
+1662441059820	Rename type 'DAO'
+1662510123887	Move compilation unit
+1662510270978	Rename type 'GuestbookDAO'
+1662517093466	Rename type 'CafeMenu'
+1662527398759	Rename type 'Guestbook_T'
+1662527405738	Rename type 'GuestbookDAO_T'
+1662529218906	Encapsulate field 'formed_writeDate'

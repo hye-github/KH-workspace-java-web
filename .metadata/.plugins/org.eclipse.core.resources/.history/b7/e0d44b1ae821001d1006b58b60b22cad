@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Manager { // 설계도
+	
+		private ArrayList<MemberField> members = new ArrayList<MemberField>();
+
+		public void addMember(MemberField m) {
+			members.add(m);
+		}
+	
+		public ArrayList<MemberField> getMembers() {
+			return members;
+		}
+		
+		public int getValidNum() {
+			Scanner sc = new Scanner(System.in);
+			while (true) {
+				try {
+					return Integer.parseInt(sc.nextLine());
+
+				} catch (Exception e) {
+					System.out.println("숫자를 정확히 입력해주세요.");
+					System.out.print(">>> ");
+				}
+			}
+		}
+		
+		public void idNumEdit(MemberField e) {
+
+			for(MemberField delMember : members) { 
+				if(delMember.getIdnum() == idNumDel) {
+					System.out.println("");
+					System.out.print("이름을 입력해주세요. >>> ");
+					String namesearch = sc.nextLine();
+					System.out.print("국어 점수를 입력해주세요. >>> ");
+					int idNumDel = manager.getValidNum();
+					System.out.print("영어 점수를 입력해주세요. >>> ");
+					int idNumDel = manager.getValidNum();
+					System.out.print("수학 점수를 입력해주세요. >>> ");
+					int idNumDel = manager.getValidNum();
+					
+					notFoundIdNum = false;
+					break;
+				}
+			}
+			
+			
+			
+			
+
+		}
+		
+		
+		
+		
+}

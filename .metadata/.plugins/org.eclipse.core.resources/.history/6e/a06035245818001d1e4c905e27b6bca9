@@ -1,0 +1,17 @@
+
+public class Quiz_01_split_false {
+
+	public static int countChar(String from, char findThis) {
+	      
+	      String[] arr = from.split(findThis + "");
+	      return arr.length-1;
+	      
+	   }
+
+	   public static void main(String[] args) {
+	      String str = "SSAS";
+	      int count = countChar(str,'a');
+	      System.out.println("소문자 a 의 개수 : " + count);
+	   }
+	
+}

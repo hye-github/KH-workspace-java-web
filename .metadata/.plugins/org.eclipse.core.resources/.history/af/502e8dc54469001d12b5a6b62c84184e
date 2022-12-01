@@ -1,0 +1,9 @@
+package diagram.exam;
+
+public class Driver{
+
+	public String name;
+	
+	public int age;
+
+}

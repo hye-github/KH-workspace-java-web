@@ -1,0 +1,16 @@
+
+public class Exam_01_02 {
+
+	public static void main(String[] args) {
+		
+		String str = "Hello"; // 글자의 개수를 세어주는 메서드가 없을까?
+		str.length(); // 유추 : 카운트, 랭스, 인덱스 등 / 이 인트를 변수에 담고 출력
+		int length = str.length(); // 변수에 담기
+		System.out.println(length); // 출력
+		
+		char charAt = str.charAt();
+		System.out.println(charAt);
+		
+	}
+	
+}

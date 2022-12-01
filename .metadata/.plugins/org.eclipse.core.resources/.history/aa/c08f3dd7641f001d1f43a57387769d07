@@ -1,0 +1,42 @@
+package midlevel;
+
+// 클래스 간의 관계
+// Has-A 포함관계	-> A Has a B
+// IS-A 상속관계	-> A Is a B
+
+//Tiger is a [animal]
+//Bear is a [animal]
+//		
+//Gold is a [member]
+//Silver is a [member]
+		
+
+public class Gold extends Member{ // Gold 클래스가 Member 클래스로 확장하겠다.
+
+	// 아무 것도 안적으면 생성자때문에 에러가 난다.
+	/* 안보이지만 디폴트 생성자가 있다. 
+	public Gold() {
+		super(); // super가 문제가 됨. 부모클래스의 생성자가 매개변수를 3개 가지고 있어버려서 콜이 불가능하다.
+	}
+	*/
+	
+	
+	public Gold(int id, String name, int point) {
+
+		super(id,name,point);
+		
+	}
+	
+	public double getBonus() { // 상속 받은 getBonus가 있지만 뻔뻔하게 무시하고 다시 만들기 
+								// overrides 선을 넘어서 기어오르다 / 무효화 시키다. 멤버로부터 상속 받은 getBonus를 무효화 시키다.
+		// 부모 클래스에서 상속 받은 메서드를 자식 클래스에서 재정의 하여 사용하는 것. (상속이라는 전제)
+		// 오버라이딩 - 메서드 이름은 같지만 매개 변수가 같을 때 다른 메서드로 정의하여 사용하는 것
+		return this.getPoint() * 0.03;  // private 때문에 this.point 안됨. 
+	}
+	
+	// 추상메서드 해결법 
+	// 1. Gold 자체를 추상 클래스로 만들기. / abstract  붙이면 해결 됨. > Gold는 new 해야해서 쓸 수 없음.
+	// 2. 추상메서드 안에 내용이 없으면 에러남. -> 내용 넣기 ( implements / 오버라이딩 )
+	
+	
+}

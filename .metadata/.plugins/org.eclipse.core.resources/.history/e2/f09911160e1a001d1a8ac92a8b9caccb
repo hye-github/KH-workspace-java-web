@@ -1,0 +1,41 @@
+
+public class Quiz_01 {
+
+	private int name;
+	private int kor;
+	private int eng;
+	private int sum = kor + eng;
+	private double avg = (kor + (double)eng)/2;
+	
+	
+	
+	
+	public Tv_02 getThis() { //set은 이미 final로 고정값이라 안됨.
+		return this;
+	}
+	
+	
+	
+	public int getVolume() {
+		return volume;
+	}
+	public void setVolume(int volume) {
+		this.volume = volume;
+	}
+	public int getChannel() {
+		return channel;
+	}
+	public void setChannel(int channel) {
+		this.channel = channel;
+	}
+	
+	
+	
+	
+
+	
+	// getter / setter 자동완성기능 활용
+	// 단축키 : (alt + shift + s) -> (r) -> (alt + a) -> (alt + r)
+	// 정보은닉된 멤버필드는 getter / setter 를 통해 접근할 수 있다.
+	
+}

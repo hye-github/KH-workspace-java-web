@@ -1,0 +1,11 @@
+package diagram.q02_car;
+
+public class Car {
+	
+	public Car(Frame frame, Engine engine, Wheel wheel) {
+		Frame frame = new Frame();
+		Engine engine = new Engine();
+		Wheel wheel = new Wheel();
+	}
+	
+}

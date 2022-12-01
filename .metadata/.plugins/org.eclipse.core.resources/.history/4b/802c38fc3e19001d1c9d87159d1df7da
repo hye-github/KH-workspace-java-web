@@ -1,0 +1,13 @@
+
+public class Monitor_02_Main {
+	public static void main(String[] args) {
+
+		Monitor_02 m = new Monitor_02();
+		
+		System.out.println(m.getBrand());
+		System.out.println(m.getPrice());
+		System.out.println(m.getWeight());
+		
+		
+	}
+}

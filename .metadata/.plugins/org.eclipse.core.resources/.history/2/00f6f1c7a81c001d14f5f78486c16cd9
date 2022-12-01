@@ -1,0 +1,27 @@
+package method;
+
+public class ExamMethod1 {
+	public static void callByName() {
+		System.out.println("'CallByName' was called");
+	}
+
+	public static void callByValue(String name) {
+		System.out.println("'" + name + "'" + " was called");
+	}
+
+	public static int addNumber(int a,int b){		return a+b;	}
+
+	public static void main(String[] ar) {
+
+		callByName();
+
+		callByValue("callByValue");
+
+		callByName();		callByValue("callByValue");
+
+
+		int result = addNumber(10,20);		System.out.println("result : "+result);
+
+	}
+
+}

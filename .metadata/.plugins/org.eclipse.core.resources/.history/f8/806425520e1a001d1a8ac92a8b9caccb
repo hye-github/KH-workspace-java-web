@@ -1,0 +1,79 @@
+
+public class Quiz_01 {
+
+	private int name;
+	private int kor;
+	private int eng;
+	private int sum;
+	private double avg;
+	
+	
+	public stud[] {
+		return name;
+	}
+	
+
+	public int getName() {
+		return name;
+	}
+
+
+
+	public void setName(int name) {
+		this.name = name;
+	}
+
+
+
+	public int getKor() {
+		return kor;
+	}
+
+
+
+	public void setKor(int kor) {
+		this.kor = kor;
+	}
+
+
+
+	public int getEng() {
+		return eng;
+	}
+
+
+
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+
+
+
+	public int getSum() {
+		return kor + eng;
+	}
+
+
+
+	public void setSum(int sum) {
+		this.sum = sum;
+	}
+
+
+
+	public double getAvg() {
+		return (kor + (double)eng)/2;
+	}
+
+
+
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+
+	
+	// getter / setter 자동완성기능 활용
+	// 단축키 : (alt + shift + s) -> (r) -> (alt + a) -> (alt + r)
+	// 정보은닉된 멤버필드는 getter / setter 를 통해 접근할 수 있다.
+	
+}

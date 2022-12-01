@@ -1,0 +1,5 @@
+package diagram.exam;
+
+public class Car {
+	protected void specialFunction() {};
+}

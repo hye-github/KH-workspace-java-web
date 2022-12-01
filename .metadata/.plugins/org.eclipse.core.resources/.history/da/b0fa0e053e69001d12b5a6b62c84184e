@@ -1,0 +1,6 @@
+package diagram.exam;
+
+public class BuyCar {
+	private Driver bestDriver;
+	private Car carType;
+}

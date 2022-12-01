@@ -1,0 +1,10 @@
+package diagram.exam;
+
+public abstract class Audi extends Car {
+//public class Audi implements Car{
+
+	private int price;
+
+	public void saveMode() {}
+
+}

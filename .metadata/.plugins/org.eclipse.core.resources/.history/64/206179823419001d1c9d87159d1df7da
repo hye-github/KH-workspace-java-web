@@ -1,0 +1,22 @@
+
+public class Tv_02 {
+
+	private int volume;
+	private int channel;
+	public int getVolume() {
+		return volume;
+	}
+	public void setVolume(int volume) {
+		this.volume = volume;
+	}
+	public int getChannel() {
+		return channel;
+	}
+	public void setChannel(int channel) {
+		this.channel = channel;
+	}
+	
+	// 자동완성기능 활용 / 단축키 : (alt + shift + s) -> (r) -> (alt + a) -> (alt + r)
+	
+	
+}

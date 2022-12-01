@@ -1,0 +1,26 @@
+package diagram.q01_animal;
+
+public class Animal {
+
+	public String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Animal(String name) {
+		super();
+		this.name = name;
+	}
+
+	public Animal() {
+		super();
+	}
+	
+	
+	
+}

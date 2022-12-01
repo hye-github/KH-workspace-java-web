@@ -1,0 +1,43 @@
+while(true) {
+	System.out.println("검색 방식을 선택해주세요.");
+	System.out.println("(1) 영화 제목으로 검색");
+	System.out.println("(2) 영화 장르로 검색");
+	System.out.println("(3) 영화 평점으로 검색");
+	System.out.print("선택 >> ");
+
+
+	int search = Integer.parseInt(sc.nextLine());
+
+	if(search == 1) {
+		System.out.println("(1) 영화 제목으로 검색");
+		//								.contains(title);
+
+	} else if(search == 2) {
+		System.out.println("(2) 영화 장르로 검색");
+		//								.equals(genre); 
+
+	} else if(search == 3) {
+
+		System.out.println("찾고자하는 영화 평점을 입력해주세요.");
+		int searchgrade = Integer.parseInt(sc.nextLine());
+
+		if(input > 0) {
+			System.out.println("제목\t장르\t평점");
+		} else {
+			System.out.println("출력할 내용이 없습니다.");
+		}
+
+		if(searchgrade == mov[i].getGrade()) {
+
+			for(i = 0;i < mov.length;i++) {
+				System.out.println(mov[i].getTitle() + "\t" + mov[i].getGenre() + "\t" + mov[i].getGrade());		
+				continue;
+			}
+		}
+
+
+	}
+
+}
+
+

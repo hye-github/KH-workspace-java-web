@@ -1,0 +1,8 @@
+
+public class Playing_01 {
+	public static void main(String[] args) {
+
+		Robot r = new Robot(); //첫글자가 대문자면 누군가가 클래스를 만들었다.
+		
+	}
+}

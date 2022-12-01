@@ -1,0 +1,10 @@
+package diagram.e06_association_composition;
+
+public class Person {
+	private Eyes e = new Eyes();
+	private Heart h = new Heart();
+	
+
+	
+	
+}

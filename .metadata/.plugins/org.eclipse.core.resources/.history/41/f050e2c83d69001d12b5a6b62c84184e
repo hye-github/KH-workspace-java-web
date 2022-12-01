@@ -1,0 +1,10 @@
+package diagram.exam;
+
+public class Benze {
+	private int price;
+	
+	public Status autoDrive(){
+		return null;
+	}
+	
+}

@@ -1,0 +1,21 @@
+package midlevel;
+
+public class Manager { // 설계도
+	
+		private Member[] members = new Member[10];  // 멤버형 인스턴스는 만들지 않았다. 멤버형 변수를 10개 만든거다.
+
+		private int index = 0;
+
+		public void addMember(Member m) {
+			members[this.index++] = m; // 매개변수가 members m 다형성을 가지고 있다. 오버로딩 필요 없다.
+		}
+
+		public Member[] getMembers() {
+			return members; // 배열이 리턴되는게 아니라, 배열의 주소가 리턴 된다.
+		}
+		
+		public int getIndex() {
+			return index;
+		}
+		
+}

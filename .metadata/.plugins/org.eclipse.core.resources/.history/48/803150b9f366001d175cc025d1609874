@@ -1,0 +1,12 @@
+package diagram.q04_smartphone;
+
+public interface MultiMedia {
+
+		void call();
+		void sms();
+		void youtube();
+		void movie();
+		void music();
+		void takePicture();
+		void calculate();
+}

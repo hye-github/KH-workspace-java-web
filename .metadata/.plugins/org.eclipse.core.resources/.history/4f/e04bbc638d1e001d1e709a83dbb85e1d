@@ -1,0 +1,5 @@
+
+public class Temp { // Temp : 임시
+	public int a;			// 멤버필드
+	public static int b;	// 멤버필드
+}

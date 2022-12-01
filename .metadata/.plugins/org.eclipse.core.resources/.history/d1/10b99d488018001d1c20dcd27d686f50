@@ -1,0 +1,10 @@
+
+public class Exam_02 {
+	public static void main(String[] args) {
+
+		abc(5,'A') 인트형, 캐릭터형 총 2개
+		
+		boolean reasult = abc(5,'A')
+		
+	}
+}

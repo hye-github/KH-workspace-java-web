@@ -1,0 +1,41 @@
+package diagram.q02_car;
+
+public class Car {
+
+	Frame frame;
+	Engine engine;
+	Wheel wheel;
+	
+	public Frame getFrame() {
+		return frame;
+	}
+
+	public void setFrame(Frame frame) {
+		this.frame = frame;
+	}
+
+	public Engine getEngine() {
+		return engine;
+	}
+
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+
+	public Wheel getWheel() {
+		return wheel;
+	}
+
+	public void setWheel(Wheel wheel) {
+		this.wheel = wheel;
+	}
+
+	public Car(Frame frame, Engine engine, Wheel wheel) {
+		super();
+		this.frame = frame;
+		this.engine = engine;
+		this.wheel = wheel;
+	}
+	
+	
+}

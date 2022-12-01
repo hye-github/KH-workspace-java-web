@@ -1,0 +1,6 @@
+
+public class mouse {
+	private String color;
+	private int dpi;
+	private int price;
+}

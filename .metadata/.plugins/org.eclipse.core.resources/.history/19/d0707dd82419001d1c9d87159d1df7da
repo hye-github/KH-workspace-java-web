@@ -1,0 +1,22 @@
+
+public class Tv {
+
+	public int volume; // 공공의/ 멤버필드 볼륨은 공공으로 써. 선언
+	private int channel; // 사적인/ 멤버필드 채널은 내꺼야. 아무도 건드릴 수 없어. 선언
+	// Tv 중괄호 안에서만 channel을 건드릴 수 있다. 클래스 내부에서만 사용할 수 있다.
+
+	void channer1Up() {
+		channel = 20;
+	}
+
+	public void channelDown() {
+		if(channel > 0) {
+			channel--;
+		}
+	}
+
+	// 정보은닉
+	// public / protected / package / private - ( 접근제한자 )
+	// : 필드나 메서드 앞에 붙이는 키워드 / 붙일 때 어떠한 현상이 일어남
+
+}

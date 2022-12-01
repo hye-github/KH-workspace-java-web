@@ -1,0 +1,99 @@
+import java.util.Scanner;
+
+
+
+public class Quiz_01 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+
+
+		Student[] stds = new Student[10];
+
+
+
+		int count = 0;
+
+		
+
+		while (true) {
+
+			System.out.println("<< 학생 관리 프로그램 >> ");
+
+			System.out.println("1. 신규 정보 입력");
+
+			System.out.println("2. 학생 목록 출력");
+
+			System.out.println("3. 프로그램 종료");
+
+			System.out.print("선택 >>");
+
+			int menu = Integer.parseInt(sc.nextLine());
+
+
+
+			switch (menu) {
+
+
+
+			case 1:
+
+				System.out.print("이름 : ");
+
+				String name = sc.nextLine();
+
+				System.out.print("국어 점수 : ");
+
+				int kor = Integer.parseInt(sc.nextLine());
+
+				System.out.print("영어 점수 : ");
+
+				int eng = Integer.parseInt(sc.nextLine());
+
+				stds[count] = new Student(name, kor, eng);
+
+				count++;
+
+				break;
+
+				
+
+			case 2:
+
+				if (count == 0) {
+
+					System.out.println("출력할 내용이 없습니다.");
+
+				} else {
+
+					System.out.println("이름\t국어\t영어\t합계\t평균");
+
+					for (int i = 0; i < count; i++) {
+
+						System.out.println(stds[i].getName() + "\t" + stds[i].getKor() + "\t" + stds[i].getEng());
+
+					}
+
+				}
+
+				break;
+
+				
+
+			case 3:
+
+				System.out.println("프로그램을 종료합니다.");
+
+				System.exit(0);
+
+			}
+
+
+
+		}
+
+	}
+
+}

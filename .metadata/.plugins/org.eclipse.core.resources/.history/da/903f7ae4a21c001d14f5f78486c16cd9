@@ -1,0 +1,27 @@
+
+public class Test {
+
+	public static int countS(String str) {
+
+		int count = 0;
+
+		for(int i = 0;i < str.length();i++) { // 반복문
+			char ch = str.charAt(i);
+			if(ch == 'S') { // S 대신에 문자를 찾을 수 있게끔
+				count++;
+			}
+		}
+		return count;
+
+	} 
+
+
+	public static void main(String[] args) {
+
+		String str = "sadjQWONSLDKASDLINKHskdfhwqksdfjQLINRJDSNFSDKFkhkqwjrhsdfnQKJHSflJrhhdsfhQEj";
+
+		int count = countS(str); // 대문자 S 개수를 찾아서 리턴
+		System.out.println("대문자 S 의 개수 : " + count);
+
+	}
+}

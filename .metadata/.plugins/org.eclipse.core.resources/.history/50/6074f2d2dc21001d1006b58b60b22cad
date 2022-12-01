@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+public class Manager { // 설계도
+	
+		private ArrayList<MemberField> members = new ArrayList<MemberField>();
+
+		public void addMember(MemberField m) {
+			members.add(m);
+		}
+		
+		public void removeMember(int idNumsearch) {
+			members.remove(idNumsearch);
+		}
+		
+		
+		
+
+//		arr.add(1,"Hello");
+		
+		public ArrayList<MemberField> getMembers() { // 제너릭(<Member>)은 자료형(ArrayList)이 사용되는 곳에 모두 넣어야함
+			return members;
+		}
+		
+}

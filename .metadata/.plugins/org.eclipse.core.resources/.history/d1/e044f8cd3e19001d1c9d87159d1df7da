@@ -1,0 +1,12 @@
+
+public class Monitor_02 {
+	private String brand;
+	private int price;
+	private double weight;
+	
+	void powerOn(){}
+	void powerOff(){}
+	void volumeUp(){}
+	void volumeDown(){}
+	
+}

@@ -1,0 +1,6 @@
+
+public class Temp { // Temp : 임시
+	public int a;			// 멤버필드 // 멤버변수-Temp 클래스를 구성하는 변수, 클래스 안에 만들어진 변수, (지역변수x)
+							// 설계도기때문에 실제 메모리에 a가 있는건 아니다. 실제 존재하지않는다.
+	public static int b;	// 멤버필드 // 멤버변수(지역변수x) 
+}

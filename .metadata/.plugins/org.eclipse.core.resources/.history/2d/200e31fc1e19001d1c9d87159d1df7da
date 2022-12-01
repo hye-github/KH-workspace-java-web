@@ -1,0 +1,10 @@
+
+public class Tv {
+
+	int volume;
+	int channel;
+	
+	// 정보은닉
+	// public / protected / package / private - ( 접근제한자 )
+	
+}

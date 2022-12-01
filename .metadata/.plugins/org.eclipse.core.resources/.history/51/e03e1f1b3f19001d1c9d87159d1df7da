@@ -1,0 +1,17 @@
+
+public class Monitor_02_Main {
+	public static void main(String[] args) {
+
+		Monitor_02 m = new Monitor_02();
+		
+		System.out.println(m.getBrand());
+		System.out.println(m.getPrice());
+		System.out.println(m.getWeight());
+		
+		// null -> 숫자 0을 뜻함 / null은 0의 다른 자료형 버전
+		// 0 -> 숫자 0을 뜻함
+		// 0.0 -> 숫자 0을 뜻함
+
+		
+	}
+}

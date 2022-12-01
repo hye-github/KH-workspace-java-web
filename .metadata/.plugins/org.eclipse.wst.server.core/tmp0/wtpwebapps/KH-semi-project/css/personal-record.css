@@ -1,0 +1,379 @@
+@charset "utf-8";
+
+
+#personal-record div[class^='col'] {
+	padding: 10px;
+}
+
+#personal-record .boundary {
+	padding: 10px;
+	border: solid #808080 1px;
+	border-radius: 6px;
+}
+
+#personal-record .boundary[id^=record],
+#personal-record .boundary[id^=reg_inbody] {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#personal-record #notice {
+	height: 65px;
+	line-height: 45px;
+}
+
+#personal-record #manager {
+	height: 250px;
+}
+
+#personal-record #inbody,
+#personal-record #weight {
+	height: 300px;
+	transition: 0.5s;
+}
+
+#personal-record #inbody_chart {
+	transition: 0.5s;
+}
+
+#personal-record #weight_chart {
+	transition: 0.5s;
+}
+
+#personal-record #calendar {
+	height: 400px;
+}
+
+#personal-record #result,
+#personal-record #record {
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 350px;
+	transition: 0.5s;
+}
+
+#personal-record #result_contents {
+	position: relative;
+}
+
+#personal-record #result_contents p {
+	margin: 0px;
+}
+
+#personal-record #result_contents div[class^="col"] {
+	padding-bottom: 0px;
+}
+
+#personal-record #result_contents #summary {
+	padding:0px !important;
+	background-color: #F9F7F7;
+	border-radius:6px;
+	-webkit-box-shadow: 1x 1px 3px 1px #808080;
+	box-shadow: 1px 1px 3px 1px #C8C8C8;
+}
+
+#personal-record #result_contents #record_memo {
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+
+#personal-record #result .col-5 {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#personal-record #result .col-5::-webkit-scrollbar {
+	display: none;
+}
+
+
+#personal-record .filter {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	font-size: x-large;
+	background-color: #18181840;
+	border-radius: 6px;
+	line-height: 300px;
+	z-index: 2;
+}
+
+#personal-record #record {
+	position: relative;
+	display: none;
+}
+
+#personal-record #record input:not([type="range"]) {
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 0px;
+	border-bottom: 1px solid #808080;
+}
+
+#personal-record #record input:not([type="range"]):focus {
+	outline: none;
+	box-shadow: 0px 1px 0px 0px #808080;
+}
+
+#personal-record #record #reg_range_label {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	bottom: 175%;
+	font-size: 20px;
+	line-height: 20px;
+	transform: translate(0, 20px);
+}
+
+#personal-record #record form {
+	position: relative;
+}
+
+#personal-record #record sup {
+	color: red;
+}
+
+#personal-record #record .text-start {
+	padding-left: 15px;
+}
+
+#personal-record #record .text-end {
+	padding-right: 15px;
+}
+
+#personal-record #record #reg_memo:focus {
+	outline: none;
+}
+
+
+#personal-record #reg_inbody {
+	position:absolute;
+	top:-11px;
+	left:746px;
+	width:50%;
+	height:400px;
+	transition: 0.5s;
+	background-color: white;
+}
+
+#personal-record #reg_filter {
+	position:absolute;
+	top:-11px;
+	left:774px;
+	width:50%;
+	height:400px;
+	background-color: white;
+	border-left: 1px solid #808080;
+	z-index: 2;
+}
+
+#personal-record #reg_inbody #btn_inbody {
+	position: absolute;
+	top:0px;
+	left: -1px;
+	width:41px;
+	height:100%;
+	border:0px;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	background-color: #DBE2EF;
+	transition: 0.5s;
+}
+
+#personal-record #reg_inbody #btn_inbody:hover {
+	background-color: #CBD2FF;
+}
+
+#personal-record .chart_wrap {
+	padding: 5px;
+	width: 100%;
+}
+
+
+/* 캘린더 부분 */
+#personal-record #calendar {
+	position: relative;
+	padding: 0px;
+	top: -10px;
+	border: none;
+
+}
+
+#personal-record #calendar>* {
+	width: 100%;
+	height: 100%;
+}
+
+#personal-record .ui-datepicker-calendar {
+	width: 90% !important;
+	height: 75% !important;
+}
+
+#personal-record .ui-datepicker-header {
+	height: 90px !important;
+}
+
+#personal-record .ui-datepicker-title {
+	font-size: 20px !important;
+}
+
+#personal-record .ui-corner-all a {
+	transform: translate(0, 6px) !important;
+}
+
+#personal-record .ui-datepicker-calendar th {
+	position: relative !important;
+	top: -10px !important;
+	font-size: 18px !important;
+}
+
+#personal-record .ui-datepicker td a {
+	font-size: 20px !important;
+}
+#personal-record .ui-datepicker td img {
+	position: relative;
+	width: 100%;
+	top:-8px;
+	transition: 0.5s;
+}
+
+#personal-record .ui-datepicker td a img:hover {
+	scale:1.1;
+}
+
+#personal-record .ui-datepicker-week-end:first-of-type a {
+	color: red;
+}
+
+#personal-record .ui-datepicker-week-end:last-of-type a {
+	color: blue;
+}
+
+#personal-record .ui-datepicker-week-end:first-of-type .ui-state-active {
+	background-color: red !important;
+}
+
+#personal-record .ui-datepicker-week-end:last-of-type .ui-state-active {
+	background-color: blue !important;
+}
+
+#personal-record .ui-datepicker td:not(.ui-datepicker-week-end) .ui-state-active {
+	background-color: black !important;
+}
+
+#personal-record .ui-state-active {
+	color: white !important;
+}
+
+
+
+
+
+
+
+/* Manager CSS */
+#personal-record #m_add_form{display: none;}
+#personal-record #m_update_form{display: none;}
+#personal-record .manager_btnBox{
+	position: relative;
+	width: fit-content;
+}
+#personal-record .m_md_box{
+	left: 140px;
+	bottom: 15px;
+}
+#personal-record .m_a_box{bottom: 20px;}
+#personal-record .manager_btnBox > span{
+	padding-left: 7px;
+	cursor: pointer;
+	color: #606060;
+}
+#personal-record .manager_btnBox > span:hover{color: black;}
+#personal-record .manager_titleBox{
+	width: fit-content;
+	font-weight: bold;
+	padding: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 2px solid rgb(255, 238, 0);
+	border-radius: 6px;
+	background-color: rgba(242, 250, 127, 0.3);
+}
+
+#personal-record .manager_startBox{
+	margin: 15px;
+}
+
+#personal-record .manager_endBox{
+	margin: 15px;
+}
+
+#personal-record .manager_nullBox{
+	margin-top: 60px;
+	font-size: 1.2em;
+}
+
+/* Manager Form CSS */
+#personal-record .m_table{
+	width: 300px;
+	background-color: #8f959a;
+	border: 1px solid #808080;
+	box-shadow: 1px 1px 1px 1px #b9b9b9;
+	opacity: 0.97;
+	border-radius: 6px;
+	padding-top: 20px;
+	position: relative;
+	left: 750px;
+	bottom: 701px;
+}
+#personal-record .m_head{margin-bottom: 13px;}
+#personal-record .m_inputDiv{margin-bottom: 12px;}
+#personal-record .m_table strong{font-size: 1.1em;}
+#personal-record .m_table_btn{
+	margin-bottom: 16px;
+	border: 1px solid #808080;
+	border-radius: 6px;
+	font-size: 14px;
+}
+#personal-record .m_table_btn:hover{
+	color: #fff;
+	background-color: black;
+	text-decoration: none;
+	transition: 0.5s;
+}
+#personal-record .m_table_btn:active{
+	transform: scale(0.95);
+	color: #fff;
+	background-color: black;
+	text-decoration: none;
+	transition: 0s;
+}
+#personal-record .m_table input{
+	width: 150px;
+	margin-left: 25px;
+	padding: 3px;
+	padding-left: 10px;
+	font-size: 13px;
+	border: 1px solid #808080;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

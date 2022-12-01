@@ -1,0 +1,48 @@
+
+public class Mouse {
+	private String brand;
+	private String color;
+	private int dpi;
+	private int price;
+	private double weight;
+	
+	void dpi(int min, int max) {
+		min = 0;
+		max = 300;
+	}
+	
+	void weight(double weight) {
+		weight  = 151.83;
+	}
+	
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public int getDpi() {
+		return dpi;
+	}
+	public void setDpi(int dpi) {
+		this.dpi = dpi;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public double getWeight() {
+		return weight;
+	}
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+}

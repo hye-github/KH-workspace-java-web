@@ -1,0 +1,13 @@
+
+public
+
+public class Quiz_01 {
+	public static void main(String[] args) {
+
+		String str = "sadjQWONSLDKASDLINKHskdfhwqksdfjQLINRJDSNFSDKFkhkqwjrhsdfnQKJHSflJrhhdsfhQEj";
+		
+		countS(str); // 대문자 S 개수를 찾아서 리턴
+		
+		
+	}
+}

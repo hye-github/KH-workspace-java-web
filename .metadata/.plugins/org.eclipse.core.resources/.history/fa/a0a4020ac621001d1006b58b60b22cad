@@ -1,0 +1,19 @@
+
+public class MemberField {
+
+	private int idnum;
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	private int sum;
+	private int avg;
+	idnum
+	
+	kor
+	eng
+	math
+	sum
+	avg
+	
+}

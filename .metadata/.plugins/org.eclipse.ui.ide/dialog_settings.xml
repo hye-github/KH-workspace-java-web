@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Administrator\Documents\develop\workspace_java"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_13_Network"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Test_03_220824"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Test_02_220816"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Test_01_220805"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Test"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_12_StudentManager_Teacher"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_12_StudentManager_Mine"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_11_Collection"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_10_OOP4_Teacher"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_10_OOP4_Mine"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_09_OOP3_Library"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_09_Homework01"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_08_OOP_02"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_08_OOP"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_07_Method"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_06_Array"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_05_Random"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_04_Programming_220803-04"/>
+			<item value="C:\Users\hezuc\Documents\Java_공공데이터과정\workspace\Day_04_Programming_220803"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="701"/>
+		<item key="DIALOG_Y_ORIGIN" value="133"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="580"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Administrator\git\eclipsePre"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="523"/>
+			<item key="DIALOG_WIDTH" value="493"/>
+			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_Y_ORIGIN" value="190"/>
+			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		</section>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1661348185622"/>
+	</section>
+</section>

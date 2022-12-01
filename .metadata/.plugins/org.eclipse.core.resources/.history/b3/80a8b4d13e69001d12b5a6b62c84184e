@@ -1,0 +1,9 @@
+package diagram.exam;
+
+public void Car{
+
+public void defaultFunction();
+
+protected abstract specialFunction();
+
+}

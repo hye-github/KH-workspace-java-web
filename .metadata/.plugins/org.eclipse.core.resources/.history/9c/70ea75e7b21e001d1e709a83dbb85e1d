@@ -1,0 +1,34 @@
+package midlevel;
+
+public class Manager { // 설계도
+		private Silver[] silverMembers = new Silver[10]; // 실버 인스턴스 정보를 여러개 배열하기 위해 만드는 중
+		
+		private Gold[] goldMembers = new Gold[10]; 
+		private int index = 0;
+		
+		public void addMember(Silver s) {
+			silverMembers[this.index++] = s; // Silver형 배열에서 하나 고른거라 Silver형 배열[index]이다. this는 빼도 상관 없다.
+		}
+		
+		public Silver[] getSilverMembers() { // 배열 10개의 주소만 넘어가는거다. 배열이 넘어가는거 아니다..
+			return silverMembers;
+		}
+		
+		public void addMember(Gold g) {
+			goldMembers[this.index++] = g;
+		}
+		
+		public Gold[] getGoldMembers() {
+			return goldMembers;
+		}
+		
+		
+		public int getSilverIndex() {
+			return index;
+		}
+		public int getGoldIndex() {
+			return index;
+		}
+		
+		
+}

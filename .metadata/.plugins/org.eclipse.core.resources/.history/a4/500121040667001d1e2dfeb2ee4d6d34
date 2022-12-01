@@ -1,0 +1,9 @@
+package diagram.q05_shopping;
+
+import java.util.List;
+
+public class Cart {
+	
+	List<Item> item = new Item<>();
+	
+}

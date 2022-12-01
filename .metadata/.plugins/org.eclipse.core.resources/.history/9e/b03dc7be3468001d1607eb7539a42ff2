@@ -1,0 +1,32 @@
+package diagram.q05_shopping;
+
+public class ShopKeeper {
+
+
+	public Cart getCart() {
+		return null;
+	}
+
+
+
+	public void setCart(Cart cart) {
+		
+	}
+
+
+
+	public int makeBillPaper() {
+		return 0;
+	};
+
+	
+	
+	public void calculate(calculate) {
+		Calculator calculate = new Calculator();
+	}
+	
+	
+
+	
+	
+}

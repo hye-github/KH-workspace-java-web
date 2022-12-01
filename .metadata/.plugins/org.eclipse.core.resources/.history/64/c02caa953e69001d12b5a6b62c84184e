@@ -1,0 +1,13 @@
+package diagram.exam;
+
+public class Benz implements Car{
+
+private static int price;
+
+public Status autoDrive(){
+
+Status s = new Status();
+
+return s;
+
+}

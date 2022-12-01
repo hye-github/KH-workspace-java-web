@@ -1,0 +1,10 @@
+package diagram.exam;
+
+public interface Car{
+	//public void Car{
+
+public void defaultFunction();
+
+protected abstract specialFunction();
+
+}

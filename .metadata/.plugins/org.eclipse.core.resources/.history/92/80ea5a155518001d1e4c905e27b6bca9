@@ -1,0 +1,28 @@
+
+
+public class Quiz_01 {
+
+	public static int countS(String str) {
+		
+		String[] arr = str.split("S");
+		// S 기준으로 쪼개. 그 쪼개진 인덱스 최대 값을 세어 
+
+		for(int n = 0;n < arr.length; n++) {
+			arr[n] = (char)('A' + n);
+
+			System.out.println(arr[n]);
+		}
+	} 
+
+
+	public static void main(String[] args) {
+
+	String str = "sadjQWONSLDKASDLINKHskdfhwqksdfjQLINRJDSNFSDKFkhkqwjrhsdfnQKJHSflJrhhdsfhQEj";
+
+	int count = countS(str); // 대문자 S 개수를 찾아서 리턴
+	System.out.println("대문자 S 의 개수 : " + count);
+	str.
+
+	}
+
+}

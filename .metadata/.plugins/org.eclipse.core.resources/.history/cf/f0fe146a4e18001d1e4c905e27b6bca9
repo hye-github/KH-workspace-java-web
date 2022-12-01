@@ -1,0 +1,37 @@
+public class Exam_01_02 {
+
+	public static void main(String[] args) {
+		
+		String str = "Hello World"; // 글자의 개수를 세어주는 메서드가 없을까?
+		
+		str.length(); // 유추 : 카운트, 랭스, 인덱스 등 / 이 인트를 변수에 담고 출력
+		int length = str.length(); // 변수에 담기
+		System.out.println(length); // 출력
+		
+		char charAt = str.charAt(0); // 한글자, 에서 - 어디에 있는 글자 / 2에 있는 글자. 두번째에 있는 글자
+		System.out.println(charAt); // 매개변수는 인트형 / 리턴은 캐릭터형으로
+		// 트라이캐치 대신에 str.charAt(); 를 응용하면 
+		// 각 자리에 숫자 말고 다른 글자가 입력되면 파스인트가 되지않게 검사하는 기능 만들 수 있음.
+	
+		
+		boolean result = str.startsWith("World"); // boolean형은 ? 를 포함해서 해석해라
+		System.out.println("World로 시작 ? " + result);
+
+		result = str.endsWith("World");
+		System.out.println("Worldf로 끝 ? " + result);
+		
+		result = str.contains("Wo"); // charSequence 을 String 으로 해석 
+		System.out.println("Wo가 포함 ? " +  result);
+		
+		System.out.println("Equals : " + str.equals("Hello World"));
+		
+		
+		System.out.println("입력한 글자가 몇 번째에 위치해 있는가 ? " + (str.indexOf("e")+1));
+		
+		System.out.println(str.split("H"));
+		
+		
+		
+	}
+	
+}

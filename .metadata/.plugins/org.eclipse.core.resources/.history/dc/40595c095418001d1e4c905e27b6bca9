@@ -1,0 +1,18 @@
+
+public static int countS(String str) {
+	
+	
+	
+}
+
+public class Quiz_01 {
+	public static void main(String[] args) {
+
+		String str = "sadjQWONSLDKASDLINKHskdfhwqksdfjQLINRJDSNFSDKFkhkqwjrhsdfnQKJHSflJrhhdsfhQEj";
+		
+		int count = countS(str); // 대문자 S 개수를 찾아서 리턴
+		System.out.println("대문자 S 의 개수 : " + count);
+		
+		
+	}
+}

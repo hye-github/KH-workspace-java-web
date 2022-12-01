@@ -1,0 +1,7 @@
+package midlevel;
+
+public interface Inter { // interface 완전 추상체
+
+	public void func(); 	// 우리 눈에 안보여도 자동으로 abstract가 붙어짐.
+	// 내용을 가지지않는 메서드들의 집합체
+}

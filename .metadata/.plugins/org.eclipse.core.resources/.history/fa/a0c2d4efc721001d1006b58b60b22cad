@@ -1,0 +1,30 @@
+
+public class MemberField {
+
+	private int idnum;
+	private String name;
+	private int kor;
+	private int eng;
+	private int math;
+	private int sum;
+	private int avg;
+	
+	public MemberField() {
+		super();
+	}
+	
+	public MemberField(int idnum, String name, int kor, int eng, int math, int sum, int avg) {
+		super();
+		this.idnum = idnum;
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		this.sum = sum;
+		this.avg = avg;
+	}
+
+	
+	
+	
+}

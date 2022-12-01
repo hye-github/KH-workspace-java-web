@@ -1,0 +1,27 @@
+package diagram.q05_shopping;
+
+import java.util.List;
+
+public class Cart {
+
+	public Cart (List<Item> item) {
+
+	}
+	
+	public Cart() {}
+	
+
+	public List<Item> getItem() {
+		return null;
+	}
+
+	public void setItem(List<Item> item) {
+		
+	}
+	
+	public void addItem(Item item) {
+		item = new Item();
+	}
+	
+	
+}

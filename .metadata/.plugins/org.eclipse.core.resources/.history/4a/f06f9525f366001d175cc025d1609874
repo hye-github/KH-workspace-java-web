@@ -1,0 +1,9 @@
+package diagram.q04_smartphone;
+
+public class MultiMedia implements Smartphone {
+
+	void youtube() {};
+	void movie() {};
+	void music() {};
+	
+}

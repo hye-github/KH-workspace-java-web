@@ -1,0 +1,15 @@
+package diagram.exam;
+
+public class BuyCar{
+
+private Car carType;
+
+public BuyCar(Drivaer d){
+
+this.bestDriver = d;
+
+this.carType = new Benz();
+
+}
+
+}

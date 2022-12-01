@@ -1,0 +1,25 @@
+package midlevel;
+
+class A{
+	
+}
+
+class B extends A{
+	
+}
+
+
+public class Example {
+	public static void main(String[] args) {
+		
+		// 다형성 - 많은 형태를 가지는 성질
+		// 상속 관계에 놓여있는 두 클래스 사이에서
+		// 상위클래스(부모) 참조 변수(A형 a)는 자신을 상속 받는 하위 클래스(B) 인스턴스(new B();)의
+		// 주소를 저장할 수 있다.
+		
+		A a = new B();
+		
+		B b = new A();
+		
+	}
+}

@@ -1,0 +1,9 @@
+package diagram.e05_association_aggregation;
+
+public class Person {
+
+	private Shoes shoes;
+	private Watch watch;
+	
+	
+}

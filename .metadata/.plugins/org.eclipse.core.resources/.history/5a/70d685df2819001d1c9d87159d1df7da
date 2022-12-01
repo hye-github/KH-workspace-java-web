@@ -1,0 +1,31 @@
+// 참조자료형
+public class Monitor { // 클래스의 첫글자는 대문자 무조건 // 메모리에 만들어진 실체(실제 모니터)가 아니다. 설계도다.
+	String brand; //변수명의 첫글자는 대문자 안됨
+	int price;
+	double weight; // 멤버필드 /멤버변수들/클래스 안에 만들어진 애들
+	// Member Field
+	
+	void powerOn(){}
+	void powerOff(){}
+	void volumeUp(){}
+	void volumeDown(){} // 멤버메서드
+	// Member Method
+	
+	// Constructor
+	
+	// Nested Class(중첩된 클래스)
+	
+}
+
+//	() 매개변수
+//	{} 메서드 안에 만들어지는 변수 : 지역변수
+
+
+// 클래스를 구성하는 요소
+// Member Field
+// Member Method
+// Constructor
+// Nested Class(중첩된 클래스)
+
+
+//* 필드가 보이면 set,get메서드 바로 나오도록

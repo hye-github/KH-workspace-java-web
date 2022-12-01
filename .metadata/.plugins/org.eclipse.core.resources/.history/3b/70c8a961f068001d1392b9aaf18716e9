@@ -1,0 +1,20 @@
+package daigram.e01_Basic;
+
+abstract public class Notation {
+	
+	public int _public;
+	private String _private;
+	protected double _protected;
+	static int _default;
+	// Member Field
+	
+	public Notation() {}
+	// Constructor
+	
+	abstract public void _publicF(int a);
+	private void _privateF(double a) {}
+	protected void _protectedF(int a, double b) {}
+	void _defaultF() {}
+	// Member Method
+	
+}

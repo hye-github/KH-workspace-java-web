@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Manager { // 설계도
+	
+		private ArrayList<MemberField> members = new ArrayList<MemberField>();
+
+		public void addMember(MemberField m) {
+			members.add(m);
+		}
+	
+		public ArrayList<MemberField> getMembers() {
+			return members;
+		}
+		
+		public int getValidNum() {
+			Scanner sc = new Scanner(System.in);
+			while (true) {
+				try {
+					return Integer.parseInt(sc.nextLine());
+
+				} catch (Exception e) {
+					System.out.println("숫자를 정확히 입력해주세요.");
+					System.out.print(">>> ");
+				}
+			}
+		}
+		
+		public void idNumEdit(MemberField e) {
+
+			System.out.println("숫자를 정확히 입력해주세요.");
+			System.out.print(">>> ");
+			
+			System.out.println("숫자를 정확히 입력해주세요.");
+			System.out.print(">>> ");
+			
+			System.out.println("숫자를 정확히 입력해주세요.");
+			System.out.print(">>> ");
+			
+			System.out.println("숫자를 정확히 입력해주세요.");
+			System.out.print(">>> ");
+			
+			학번\t이름\t국어\t영어\t수학\t합계\t평균
+			
+
+		}
+		
+		
+		
+		
+}

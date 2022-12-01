@@ -1,0 +1,5 @@
+package diagram.e05_association_aggregation;
+
+public class Person {
+
+}

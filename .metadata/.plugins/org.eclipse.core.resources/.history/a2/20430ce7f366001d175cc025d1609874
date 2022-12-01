@@ -1,0 +1,17 @@
+package diagram.q04_smartphone;
+
+public abstract class Telephone implements Smartphone {
+
+	@Override
+	public void call() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sms() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

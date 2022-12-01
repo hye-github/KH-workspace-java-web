@@ -1,0 +1,24 @@
+
+public class Tv_02 {
+
+	private int volume;
+	private int channel;
+	public int getVolume() {
+		return volume;
+	}
+	public void setVolume(int volume) {
+		this.volume = volume;  // 자동완성에서 나오는 [this.] 암묵적 문법. 안써도 쓴 것처럼 해주는 문법. 
+	}
+	public int getChannel() {
+		return channel;
+	}
+	public void setChannel(int channel) {
+		this.channel = channel;
+	}
+
+	
+	// getter / setter 자동완성기능 활용
+	// 단축키 : (alt + shift + s) -> (r) -> (alt + a) -> (alt + r)
+	
+	
+}

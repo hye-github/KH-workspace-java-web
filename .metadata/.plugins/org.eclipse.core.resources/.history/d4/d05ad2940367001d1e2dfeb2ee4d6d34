@@ -1,0 +1,11 @@
+package diagram.q05_shopping;
+
+public class Item {
+
+	public String category;
+	public String itemCode;
+	public String itemName;
+	public int itemPrice;
+	
+	
+}

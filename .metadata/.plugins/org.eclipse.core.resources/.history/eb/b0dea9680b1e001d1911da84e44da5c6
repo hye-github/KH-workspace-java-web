@@ -1,0 +1,40 @@
+
+public class Employee {
+	private String emp_id;
+	private String emp_name;
+	private int emp_wage; // 시급 // Emp_wage
+	
+	public Employee() {}
+	
+	public Employee(String emp_id, String emp_name, int emp_wage) { // Emp_wage
+//		super();
+		this.emp_id = emp_id;
+		this.emp_name = emp_name;
+		this.emp_wage = emp_wage;
+	}
+	
+	public String getEmp_id() {
+		return emp_id;
+	}
+
+	public void setEmp_id(String emp_id) {
+		this.emp_id = emp_id;
+	}
+
+	public String getEmp_name() {
+		return emp_name;
+	}
+
+	public void setEmp_name(String emp_name) {
+		this.emp_name = emp_name;
+	}
+
+	public int getEmp_wage() { // Emp_wage
+		return emp_wage;
+	}
+
+	public void setEmp_wage(int emp_wage) { // Emp_wage
+		this.emp_wage = emp_wage; // 여기 잘못 적음
+	}
+	
+}

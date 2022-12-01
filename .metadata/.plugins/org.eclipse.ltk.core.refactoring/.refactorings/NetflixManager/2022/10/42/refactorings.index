@@ -1,0 +1,20 @@
+1665560173761	Move 'index.jsp' to 'java'
+1665560201144	Delete element
+1665560217822	Move 'index.html' to 'java'
+1665560264015	Delete element
+1665560399296	Rename type 'NetflixOutput'
+1665560525930	Rename type 'NetflixManagerOutput'
+1665560535239	Rename type 'NetflixManagerInput'
+1665560571506	Rename resource 'NexflixManagerInput.jsp'
+1665560589309	Rename resource 'NetflixManagerCreate.jsp'
+1665560603201	Rename resource 'netflixmanagercreate.jsp'
+1665560612249	Rename resource 'NexflixManagerOutput.jsp'
+1665560615724	Rename resource 'netflixcreate.jsp.jsp'
+1665565431653	Delete element
+1665565436431	Move 'error.jsp' to 'webapp'
+1665565442570	Move 'jstl-1.2.jar' to 'lib'
+1665565444243	Move 'ojdbc6.jar' to 'lib'
+1665571880568	Delete element
+1665571916382	Delete element
+1665573094515	Delete element
+1665646746869	Copy files

@@ -1,0 +1,7 @@
+package diagram.q05_shopping;
+
+public abstract class Calculator {
+
+	private abstract int calculate();
+	
+}

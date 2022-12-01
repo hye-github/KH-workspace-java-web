@@ -1,0 +1,16 @@
+
+public class Exam_03 {
+
+	//	매개변수는 지역변수의 성질과 같다.
+
+	public static void func(int num) {
+		num = 20;
+	}
+
+	public static void main(String[] args) {
+		int num = 10;
+		func(num); 
+		System.out.println(num); // 결과값은 10 이다. 20이 된 적이 없다.
+	}
+
+}

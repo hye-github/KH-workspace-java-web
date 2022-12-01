@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class Exam_02 {
+	public static void main(String[] args) {
+
+		ArrayList arr = new ArrayList(); // 배열을 내부에 품고 있지만, 배열은 아니다. arr[0]로 쓸 수 없다.
+		arr.add("Hello");
+		arr.add("World");
+		
+		
+	}
+}

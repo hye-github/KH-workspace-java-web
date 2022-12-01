@@ -1,0 +1,11 @@
+1667279946103	Delete element
+1667548127688	Rename resource 'bs_sign.jsp'
+1667548182655	Move 'bs-sign.jsp' to 'bs'
+1667548293182	Rename resource 'sign.jsp'
+1667548296070	Rename resource 'bs-sign.jsp'
+1667609428542	Delete element
+1667645519570	Rename resource 'user.css'
+1667654528765	Rename type 'BsController'
+1667654555706	Rename type 'BsUsersController'
+1667656769294	Rename compilation unit 'BsController.java'
+1667656835341	Rename compilation unit 'BsUserController.java'

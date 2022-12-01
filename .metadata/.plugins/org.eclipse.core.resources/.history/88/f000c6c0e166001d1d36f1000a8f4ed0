@@ -1,0 +1,10 @@
+package daigram.e02_generalization;
+
+public class Member {
+
+	private int id;
+	private String name;
+	private double potint;
+	
+	
+}

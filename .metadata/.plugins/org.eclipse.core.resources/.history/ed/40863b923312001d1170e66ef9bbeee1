@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Exam_01 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("당신이 좋아하는 과일을 선택하세요.");
+		System.out.println("1. 사과");
+		System.out.println(">> ");
+		int menu = Integer.parseInt(sc.nextLine());
+		
+		if(menu == 1) {
+			
+		}
+		
+		
+	}
+}

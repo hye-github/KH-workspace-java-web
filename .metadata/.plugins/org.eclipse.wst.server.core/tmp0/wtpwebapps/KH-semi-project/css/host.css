@@ -1,0 +1,378 @@
+@charset "utf-8";
+
+/* header */
+body {
+    background: #F2F2F2;
+}
+
+/*#headerMarginBox{*/
+/*    width: 285px;*/
+/*    height: 100vh;*/
+/*    position: fixed;*/
+/*    background: #001A41;*/
+/*    z-index: 1;*/
+/*}*/
+
+#wrap_host{
+    height: 100vh;
+    z-index: 2;
+}
+
+header {
+    min-height: 100vh;
+    background: #001A41;
+    z-index: 3;
+    min-height: 900px;
+}
+
+.logoDiv {
+    width: 285px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    z-index: 4;
+}
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 40px;
+    margin:15px;
+}
+
+.a_tag {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#nav a:hover {
+    color: #fff6ab;
+    transition: 0.3s ease-out;
+}
+#nav a:hover:not(:hover) {
+    color: #FFFFFF;
+    transition: 0.3s ease-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    font-size: 24px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+nav > ul > li > ul > li {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.i_margin {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.in_i_margin {
+    width: 35px;
+    margin-left: 20px;
+    margin-top: -3px;
+
+}
+
+.in_i_margin > i{
+    font-size: 10px;
+    transform: scale(0.5);
+}
+
+
+
+
+/* 게시판 내용 버튼 등 구현 */
+#search_box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1200px;
+    height: 100px;
+    background: #C7D3DC;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+
+#select {
+    padding: 0 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#search {
+    width: 650px;
+    height: 40px;
+    padding: 0 10px;
+    position: relative;
+    left: -4px;
+    font-size: 16px;
+}
+
+
+.select_box {
+    padding: 0 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.checkbox{
+    width: 70px;
+}
+.checkbox>input{
+    position: relative;
+    top:2px;
+    left: 1px;
+}
+
+
+a{
+    text-decoration:none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #003584;
+}
+
+
+.btn_function_box{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.btn_function {
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #001A41;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 6px;
+    line-height: 1.15;
+    overflow: visible;
+    text-align: center;
+    text-transform: none;
+    transition: all 80ms ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn_function:disabled {
+    opacity: .5;
+}
+
+.btn_function:hover,
+.btn_function:focus {
+    background-color: #001A41;
+    outline: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 2px;
+}
+
+.btn_function:active {
+    background-color: #002152;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 2px;
+    transform: scale(0.96);
+}
+
+/**/
+
+.btn_search {
+    width: 150px;
+    height: 40px;
+    background-color: #001A41;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1.15;
+    overflow: visible;
+    text-align: center;
+    text-transform: none;
+    transition: all 80ms ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: relative;
+    left: -9px;
+}
+
+.btn_search:disabled {
+    opacity: .5;
+}
+
+.btn_search:hover,
+.btn_search:focus {
+    background-color: #001A41;
+    outline: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 2px;
+}
+
+.btn_search:active {
+    background-color: #002152;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 2px;
+    transform: scale(0.96);
+}
+
+
+:root {
+    --animate-duration: 2s;
+    --animate-delay: 0.9s;
+}
+
+.pagination {
+    --bs-pagination-font-size: 14px;
+}
+
+.page-item{margin: 0; padding: 0}
+
+.page-link{margin: 0;}
+
+.page-link {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #C7D3DC;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #000;
+    background-color: #C7D3DC;
+    border-color: #C7D3DC;
+
+}
+
+.page-link:focus, .page-link:hover {
+    color: #000;
+    background-color: #f5f5f7;
+    border-color: #C7D3DC;
+}
+
+.board_title_row{
+    height: 50px;
+    border-radius: 6px 6px 0px 0px;
+    background-color: #C7D3DC;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.board_title_row>div{
+    text-align: center;
+    line-height: 45px;
+}
+
+.board_row{
+    background-color: #FFFFFF;
+    height: 50px;
+    font-size: 16px;
+    border-bottom: 1px solid #C7D3DC;
+}
+
+.board_row>div{
+    text-align: center;
+    line-height: 42px;
+}
+
+/* host.jsp CSS (주의) 민또비꺼! 건들면 물어요 */
+#host{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#host .hostContainer{
+    width: 95%;
+    min-width: 1537px;
+    height: 90%;
+    margin: auto;
+    margin-top: 45px;
+}
+
+
+#host .hostContainer .articleBox{
+    width: 700px;
+    height: 350px;
+    margin: 34px;
+    border: 1px solid #C7D3DC;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+}
+
+#host .articleBox > .titleBox{
+    width: 100%;
+    height: 75px;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 35px;
+    padding: 20px;
+    background-color: #C7D3DC;
+}
+
+#host .articleBox > .listBox{
+    width: 100%;
+    height: 45.6px;
+    line-height: 50px;
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid #C7D3DC;
+    background-color: #FFFFFF;
+}
+
+#host .articleBox > .listBox > .list_title{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#host .articleBox > .listBox > .list_content{
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

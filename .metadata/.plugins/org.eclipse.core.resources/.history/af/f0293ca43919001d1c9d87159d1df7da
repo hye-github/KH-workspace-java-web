@@ -1,0 +1,31 @@
+
+public class Tv_02 {
+
+	private int volume;
+	private int channel; // 설계도여서 new를 해야 tv가 만들어짐 / heap은 기본값 0.
+//	private ? this; -> 자기 참조 변수(Self Reference Field) / this 는 값이 정해져있음. 상수값. final
+//						자기 스스로를 참조하는 변수
+// new를 통해 인스턴스 화 될 때 만들어지는 this
+	
+	
+	public int getVolume() {
+		return volume;
+	}
+	public void setVolume(int volume) {
+		this.volume = volume;  // 자동완성에서 나오는 [this.] 암묵적 문법. 안써도 쓴 것처럼 해주는 문법. 
+								// import java.lang.* (예)
+								//
+	}
+	public int getChannel() {
+		return channel;
+	}
+	public void setChannel(int channel) {
+		this.channel = channel;
+	}
+
+	
+	// getter / setter 자동완성기능 활용
+	// 단축키 : (alt + shift + s) -> (r) -> (alt + a) -> (alt + r)
+	
+	
+}

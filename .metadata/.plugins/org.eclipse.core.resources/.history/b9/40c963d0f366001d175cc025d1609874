@@ -1,0 +1,11 @@
+package diagram.q04_smartphone;
+
+public abstract class Camera implements Smartphone {
+
+	@Override
+	public void takePicture() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

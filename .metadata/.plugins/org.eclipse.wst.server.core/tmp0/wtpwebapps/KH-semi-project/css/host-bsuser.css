@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+#host-bsuser #inputText {
+    width: 650px;
+    height: 40px;
+    padding: 0 10px;
+    position: relative;
+    left: -4px;
+    font-size: 16px;
+}
+
+#host-bsuser .bsuser-seq{
+    width: 110px
+}
+#host-bsuser .bsuser-email{
+    width: 304px
+}
+#host-bsuser .bsuser-name{
+    width: 160px
+}
+#host-bsuser .bsuser-phone{
+    width: 200px;
+}
+#host-bsuser .gym-count{
+    width: 150px;
+}
+#host-bsuser .bssign-date{
+    width: 200px
+}

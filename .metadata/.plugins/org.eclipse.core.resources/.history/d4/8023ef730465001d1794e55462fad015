@@ -1,0 +1,77 @@
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Exam_00 {
+   public static void main(String[] args) throws Exception {
+      WebDriver driver = (WebDriver) new ChromeDriver();
+      JavascriptExecutor js = (JavascriptExecutor) driver;
+      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+      try {
+         driver.get("https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com/");
+         
+         
+         Thread.sleep(1500);
+
+         
+         WebElement item = driver.findElement(By.className("item"));
+
+         var stTime = new Date().getTime(); 
+         while (new Date().getTime() < stTime + 30000) { 
+             Thread.sleep(500); 
+             ((JavascriptExecutor)driver).executeScript("window.scrollTo(0, document.body.scrollHeight)", item);
+         }
+
+         //item에 대한 리스트 가져오기
+         List<WebElement> elements = driver.findElements(By.className("item"));
+
+         //item 요소 조회, item은 객체이기 때문에 for문을 사용해서 조회하기
+         for (WebElement element : elements) {
+             driver.manage().timeouts().implicitlyWait(100000, TimeUnit.MILLISECONDS);
+             driver1.manage().timeouts().implicitlyWait(100000, TimeUnit.MILLISECONDS);
+
+             String url = element.findElement(By.tagName("a")).getAttribute("href");
+             driver1.navigate().to(url); //url로 이동
+             Thread.sleep(500);
+
+             //content 조회
+             System.out.println("content = " + driver1.findElement(By.name("description")).getAttribute("content"));
+
+             //title 조회
+             System.out.println("title = " + element.findElement(By.tagName("img")).getAttribute("alt"));
+             //title className으로 조회했을 때
+             //System.out.println("title = " + element.findElement(By.className("item__title")).getText());
+
+             //img 조회
+             System.out.println("image = " + element.findElement(By.tagName("img")).getAttribute("src"));
+             //img className으로 조회했을 때
+             //System.out.println("image = " + element.findElement(By.cssSelector("img.loaded")).getAttribute("src"));
+
+             //tag 조회, 하위요소
+             List<WebElement> tags = driver1.findElements(By.cssSelector("div.tag_wrap > div"));
+
+             for (WebElement webElement : tags) {
+                 System.out.print("tag = " + webElement.getText() + " / ");
+             }
+         }
+         
+         
+         
+         
+         
+
+      } catch (Exception e) {
+         e.printStackTrace();
+         driver.close();
+
+      }
+   }
+
+}

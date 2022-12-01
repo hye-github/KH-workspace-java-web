@@ -1,0 +1,7 @@
+package diagram.q04_smartphone;
+
+public class Smartphone implements Camera {
+
+	
+	
+}

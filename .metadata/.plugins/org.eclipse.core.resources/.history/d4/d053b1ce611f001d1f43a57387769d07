@@ -1,0 +1,48 @@
+package midlevel;
+
+abstract public class Member { // 이 클래스는 인스턴스를 만들 수 없다.
+
+	private int id; // heap에 저장되는 변수 / 멤버필드 변수
+	private String name;
+	private int point;
+	private double bonus;  // 정보은닉때문에 super 키워드를 이용하여 가져와야함
+	
+
+	Member(int id, String name, int point) {  // stack에 저장되는 지역변수 
+		this.id = id;					// 메서드는 스택을 먼저 사용한다. 그래서 내부에서는 스택에 있는 변수가 제일 먼저 사용됨.
+		this.name = name;
+		this.point = point;
+	}	
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getPoint() {
+		return point;
+	}
+	public void setPoint(int point) {
+		this.point = point;
+	}
+
+	abstract public double getBonus(); // 공통 코드로 묶어서 오버라이딩 처리하는게 더 좋은 코드. 객체지향적임.
+								// 중괄호를 빼서 우리가 알고 있는 메서드 모양이랑 다르다.  
+								// 자바야 이거 문법 어긋나지, 그런게 있어. -> 그런데 자바가 계속 반박함
+	
+	// 추상화
+	// abstract  : 추상적인
+	//
+	//
+	//
+	
+		
+}

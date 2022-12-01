@@ -1,0 +1,7 @@
+package diagram.exam;
+
+public class Car {
+
+	public void defaulFunction() {};
+	protected void specialFunction() {};
+}

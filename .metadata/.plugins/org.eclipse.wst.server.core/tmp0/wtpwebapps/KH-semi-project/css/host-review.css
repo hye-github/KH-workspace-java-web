@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+
+
+#host-review .search {
+    width: 650px;
+    height: 40px;
+    padding: 0 10px;
+    position: relative;
+    left: -4px;
+    font-size: 16px;
+}
+
+
+
+#host-review .board_row {
+    font-size: 13px;
+}
+
+#host-review .review_seq{
+    width: 50px
+}
+#host-review .user_email{
+    width: 220px
+}
+#host-review .gym_name{
+    width: 170px
+}
+#host-review .review_contents{
+    width: 330px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+#host-review .review_star{
+    width: 60px;
+}
+#host-review .review_like{
+    width: 90px;
+}
+
+#host-review .review_like>span{
+    position: relative;
+    top:-3px;
+}
+
+#host-review .review_date{
+    width: 140px
+}
+#host-review .review_photo{
+    width: 70px
+}
+
+
+
+#img_layout {
+    position:absolute; left:45%; top:30%; width:500px;
+    height:500px; z-index:1; overflow: hidden;
+    border: 1px solid #666666;
+}

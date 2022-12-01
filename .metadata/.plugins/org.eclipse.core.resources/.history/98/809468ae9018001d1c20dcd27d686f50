@@ -1,0 +1,30 @@
+
+public class Test {
+
+
+	public static int plus(int num1, int num2) {  
+		// 덧셈을 담당하는 직원(함수 function 펑션) / 메서드 / plus의 원래 자리
+		// public static 객체
+		
+		int result = num1 + num2;
+		return result; // 메서드의 기능을 끝내고 값을 돌려보내라.
+	
+//	return num1 + num2; // 값을 돌려보내야함. 위와 표현 동일
+//
+//							메서드 콜에 의해 전달되어지는 값을 받아 저장하는 변수 : 매개변수
+//							int num1, int num2 = 매개 변수이다. 소괄호 안이라서 지역 변수가 아님
+//							파라미터가 전달되어서 매개변수로 들어간다.
+//							메서드 기준 왼쪽 : 리턴 데이터 타입(int)  // 데이터 타입 맞춰서 작성해야함
+//							메서드 기준 오른쪽 : 매개변수
+//							메서드 안쪽은 실행하고자하는 코드
+	}
+
+	public static void main(String[] args) { 
+
+		; // argument -> 인자값 / 아규먼트 / 전달인자 // 리턴값으로 봐야함(인트값 15로)
+		System.out.println(plus(10,20));
+		//			String name = sc.nextLine() + plus(10,5); // 자연스럽게 스트링값 + 15(자동 프로모션) = 스트링값15			
+		//			Integer.parseInt(sc.nextLine()) + Math.random(); // 입력된값>인트(자동 프로모션) + 더블형랜덤값 = 더블형값
+
+	}
+}

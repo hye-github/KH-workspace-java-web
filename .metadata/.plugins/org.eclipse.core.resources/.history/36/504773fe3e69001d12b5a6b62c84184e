@@ -1,0 +1,11 @@
+package diagram.exam;
+
+public class Audi implements Car{
+
+private int price;
+
+public void saveMode(){}
+
+protected void specialFunctino(){}
+
+}

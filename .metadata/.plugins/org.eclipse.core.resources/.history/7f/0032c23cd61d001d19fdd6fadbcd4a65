@@ -1,0 +1,9 @@
+import it.sauronsoftware.ftp4j.FTPClient;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		FTPClient client = new FTPClient(); // 컨트롤 쉬프트 o => import 단축키 / 내장 라이브러리 내에만 검색 / 
+		
+	}
+}

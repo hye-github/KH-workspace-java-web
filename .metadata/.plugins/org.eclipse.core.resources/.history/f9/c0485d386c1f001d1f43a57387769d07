@@ -1,0 +1,22 @@
+package midlevel;
+
+class A{
+	
+}
+
+class B extends A{
+	
+}
+
+
+public class Example {
+	public static void main(String[] args) {
+		
+		// 다형성
+		
+		A a = new B();
+		
+		B b = new A();
+		
+	}
+}

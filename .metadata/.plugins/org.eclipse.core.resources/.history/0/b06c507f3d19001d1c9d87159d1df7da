@@ -1,0 +1,11 @@
+
+public class Tv_02_Main {
+public static void main(String[] args) {
+	
+	Tv_02 t = new Tv_02();
+	
+	System.out.println(t);
+	System.out.println(t.getThis());
+}
+	
+}

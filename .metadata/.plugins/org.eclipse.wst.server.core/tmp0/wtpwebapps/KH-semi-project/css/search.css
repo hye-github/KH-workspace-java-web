@@ -1,0 +1,384 @@
+#search{width:100%; height: 100%; min-width: 1200px;}
+#search .mapContainer{
+    position:absolute;
+    width: 100%;
+    min-width: 1200px;
+    height: 100vh;
+    display: inline-flex;
+}
+#search #map{
+	width:73%;
+    min-width: 729px;
+	height:100vh;
+}
+/* -------------------------- 메인 검색창 -------------------------- */
+#search .search_main{
+    width: 812px;
+    height: 77px;
+    border-radius: 100px;
+    position: relative;
+    left: 200px;
+    top: 135px;
+    z-index: 1000;
+    background-color: #CF0C00;
+    opacity: 0.9;
+    display: none;
+}
+#search .search_main > .search_main_span{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    line-height: 75px;
+    position: absolute;
+    left: 40px;
+}
+#search .search_main > .search_main_span > span{
+	font-family: 'Inter', sans-serif;
+   	font-style: italic;
+    font-size: 1.6em;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(55, 55, 55);
+}
+#search .search_main > .search_main_input{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    text-align: center;
+    opacity: 1;
+}
+#search .search_main > .search_main_input > input{
+    width: 404px;
+    height: 45px;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 3px 4px 5px rgb(150, 12, 12);
+}
+#search .search_main > .search_main_icon{
+    width: 30px;
+    height: 100%;
+    font-size: 1.5em;
+    color: #CF0C00;
+    position: absolute;
+    top: 22px;
+    right: 55px;
+}
+/* -------------------------- 검색 리스트 네비 -------------------------- */
+/* --------- 검색창 --------- */
+#search .searchListNav{
+    width: 27%;
+    min-width: 471px;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    background-color: #f5f5f7;
+    opacity: 0.95;
+    overflow-y: scroll;
+    box-shadow: -2px -2px 3px rgb(120, 120, 120);
+
+}
+#search .searchListNav::-webkit-scrollbar{
+    display: none;
+}
+#search .searchListNav .search_sub{
+    width: 380px;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #CF0C00;
+    border-radius: 100px;
+    text-align: center;
+    
+}
+#search .search_sub > .search_sub_input{
+    width: 97.5%;
+    height: 93.5%;
+    line-height: 40px;
+    margin: auto;
+    position: relative;
+    top: 4px;
+    
+}
+#search .search_sub > .search_sub_input > input{
+    width: 100%;
+    height: 90%;
+    border-radius: 100px;
+    padding-left: 10px;
+    border: none;
+    font-size: 1.02em;
+    box-shadow: 3px 4px 5px rgb(150, 12, 12);
+}
+#search .search_sub > .search_sub_icon{
+    width: 30px;
+    height: 30px;
+    font-size: 1.5em;
+    color: #CF0C00;
+    position: relative;
+    bottom: 39px;
+    left: 87%;
+}
+/* --------- 필터 체크 --------- */
+#search .searchListNav .search_sub_filter{
+    width: 95%;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#search .search_sub_filter > .search_tag_icon{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	display: inline-block;
+	font-size : 20px;
+    bottom: 3px;
+}
+#search .search_sub_filter > .search_tag_icon img{
+	width: 100%;
+	height: 100%;
+}
+
+#search .search_sub_filter > .search_tag{
+    width: fit-content;
+	height: 30px;
+	align-items: center;
+	background-color: #fff;
+	border: 2px solid #001A41;
+	box-sizing: border-box;
+	color: #001A41;
+	cursor: pointer;
+	display: inline-flex;
+	fill: #001A41;
+	font-family: Inter, sans-serif;
+    font-size: 12px;
+	font-weight: 600;
+	justify-content: center;
+	outline: 0;
+	margin: auto;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	transition: all .3s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	border-radius: 10px;
+	font-weight: 700;
+	box-shadow: 0px 0px 14px -7px #013d98;
+}
+
+#search .search_sub_filter > .search_tag:focus {
+    color: #001A41;
+}
+
+#search .search_sub_filter > .search_tag:hover {
+	border-color: #003584;
+	color: #003584;
+	fill: #003584;
+}
+
+#search .search_sub_filter > .search_tag:active {
+	border-color: #003584;
+	color: #003584;
+	fill: #003584;
+}
+
+
+#search .search_sub_filter > .search_tag:hover,
+#search .search_sub_filter > .search_tag:focus {
+	border-color: rgb(0, 0, 0, 0.15);
+	box-shadow: rgb(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+#search .search_sub_filter > .search_tag:hover {
+	transform: translateY(-1px);
+}
+
+#search .search_sub_filter > .search_tag:active {
+	background-color: #F0F0F1;
+	box-shadow: 0px 0px 2px 4px #013d98;
+	transform: translateY(0);
+}
+#search .search_sub_filter > .search_tag > .filter{cursor: pointer;}
+
+#search .search_sub_filter > .search_tag_check {
+	width: fit-content;
+	height: 30px;
+	margin: auto;
+	padding: 15px;
+    align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+	border-radius: 10px;
+    display: inline-flex;
+	border: 2px solid #001A41;
+	font-weight: 700;
+	box-shadow: 0px 0px 14px -7px #013d98;
+	background-image: linear-gradient(45deg, #001A41 0%, #013d98 51%, #001A41 100%);
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+#search .search_sub_filter > .search_tag_check:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+#search .search_sub_filter > .search_tag_check:active {
+	transform: scale(0.95);
+}
+
+#search .search_sub_filter > .search_tag_check > .filter{cursor: pointer;}
+
+/* --------- 네비 리스트 --------- */
+#search .searchListNav > .gym_list{
+    width: 430px;
+    height: 180px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(151, 151, 151);
+}
+#search .searchListNav > .gym_list:hover{scale: 1.01;}
+#search .gym_list > .gym_list_logo{
+    width: 159px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+#search .gym_list > .gym_list_logo > img{height: 100%;}
+#search .gym_list > .gym_list_article{
+    width: 268.5px;
+    height: 100%;
+    float: left;
+    letter-spacing :-1px;
+}
+#search .gym_list > .gym_list_article > .gym_list_title{
+    width: 95%;
+    height: 25%;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#search .gym_list > .gym_list_article > .gym_list_title .go-detail-icon{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: 5px;
+}
+#search .gym_list > .gym_list_article > .gym_list_title > a{
+    color: black; 
+    text-decoration: none; 
+    outline: none;
+    padding: 15px;
+}
+#search .gym_list > .gym_list_article > .gym_list_title > a:hover{
+    color: black;
+    text-decoration: none; 
+    outline: none;
+}
+#search .gym_list > .gym_list_article > .gym_list_title > a:active{
+    color: black;
+    text-decoration: none; 
+    outline: none;
+}
+#search .gym_list > .gym_list_article > .gym_list_title > a > i{
+    font-size: 12px;
+    color: rgb(170, 170, 170);
+    vertical-align:super;
+}
+#search .gym_list > .gym_list_article > .gym_list_open{
+    width: 95%;
+    padding-left: 25px;
+    font-size: 13px;
+}
+#search .gym_list > .gym_list_article > .gym_list_location{
+    width: 95%;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+/*     display: -webkit-box;
+  	-webkit-line-clamp: 2;
+  	-webkit-box-orient: vertical; */
+  	padding-top: 10px;
+  	padding-left: 25px;
+}
+#search .gym_list > .gym_list_article > .gym_list_phone{
+	width: 95%;
+	height: 15%;
+	font-size:14px;
+	padding-left: 25.5px;
+	color: green;
+	line-height: 25px;
+}
+#search .gym_list > .gym_list_article > .gym_list_tagBox{
+    width: 100%;
+    margin-top: 3px;
+}
+#search .gym_list > .gym_list_article > .gym_list_tagBox > .gym_list_tag:nth-child(1){
+	margin-left: 25px;
+}
+#search .gym_list > .gym_list_article > .gym_list_tagBox > .gym_list_tag{
+    border-radius: 100px;
+    width: fit-content;
+    font-size: 11px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: #001A41;
+    color: white;
+    opacity: 0.9;
+}
+#search .gym_list > .gym_list_article > .gym_list_tagBox > .btn_base{
+	height: fit-content;
+	margin: 3px;
+	padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#search .nullListBox{
+    margin: auto;
+    margin-top: 50px;
+    width: 430px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* -------------------------- 지도 마커 인포윈도우 -------------------------- */
+#search .info{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #001A41;
+    white-space: nowrap;
+    font-weight: bold;
+}
+#search .info img{
+    
+}
+
+
+
+

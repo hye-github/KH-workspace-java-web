@@ -1,0 +1,11 @@
+// 참조자료형
+public class Monitor { // 클래스의 첫글자는 대문자 무조건 // 메모리에 만들어진 실체(실제 모니터)가 아니다. 설계도다.
+	String brand; //변수명의 첫글자는 대문자 안됨
+	int price;
+	double weight; // 멤버변수들/멤버필드
+
+	void powerOn(){}
+	void powerOff(){}
+	void volumeUp(){}
+	void volumeDown(){}
+}

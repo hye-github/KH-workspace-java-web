@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+/**/
+
+#host-user #inputText {
+    width: 650px;
+    height: 40px;
+    padding: 0 10px;
+    position: relative;
+    left: -4px;
+    font-size: 16px;
+}
+
+
+#host-user .user-seq{
+    width: 110px
+}
+#host-user .user-email{
+    width: 250px
+}
+#host-user .user-name{
+    width: 160px
+}
+#host-user .user-phone{
+    width: 200px;
+}
+#host-user .user-birth{
+    width: 180px;
+}
+#host-user .sign-date{
+    width: 200px
+}
+#host-user .user-gender{
+    width: 100px
+}

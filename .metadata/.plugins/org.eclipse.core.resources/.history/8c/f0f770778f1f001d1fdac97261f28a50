@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class Exam_02 {
+	public static void main(String[] args) {
+
+		ArrayList arr = new ArrayList(); // 숫자 넣고 자료 넘쳐도 에러 없다.  ArrayList arr = new ArrayList(5);
+		// 배열을 내부에 품고 있지만, 배열은 아니다. arr[0]로 쓸 수 없다.
+		
+		arr.add("Hello"); // 번호가 없다.
+		arr.add("World"); // 번호가 없는 이유 : 똑똑한 배열이라, 
+							// 얘네를 5,8번에 넣어도 빈 공간을 없애기때문에 0,1번으로 간다.
+		arr.add("collection");
+
+		
+		System.out.println(arr.get(0));
+		System.out.println(arr.get(1));
+		
+	}
+}

@@ -1,0 +1,23 @@
+
+public class Monitor_02_Main {
+	public static void main(String[] args) {
+
+		Monitor_02 m = new Monitor_02();
+		
+		// 값을 바꾸고싶다면 => setter를 통해서 
+		
+		m.setBrand("Samsung");
+		System.out.println(m.setBrand());
+		
+		
+		
+		
+		System.out.println(m.getBrand()); // null -> 숫자 0을 뜻함 / null은 0의 다른 자료형 버전
+		System.out.println(m.getPrice()); // 0 -> 숫자 0을 뜻함
+		System.out.println(m.getWeight()); // 0.0 -> 숫자 0을 뜻함
+		
+		
+		
+		
+	}
+}

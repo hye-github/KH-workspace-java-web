@@ -1,0 +1,33 @@
+
+public class Monitor_02 {
+	private String brand = "LG"; // new 해서 인스턴트할 때 실행 됨. = 기본값(디폴트 벨류). 그래서 값이 출력됨.
+	private int price = 1000;
+	private double weight = 27.5;
+	
+	void powerOn(){}
+	void powerOff(){}
+	void volumeUp(){}
+	void volumeDown(){}
+	
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public double getWeight() {
+		return weight;
+	}
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+	
+	
+	
+}

@@ -1,0 +1,5 @@
+package midlevel;
+
+public interface Inter { // interface 완전 추상체
+
+}

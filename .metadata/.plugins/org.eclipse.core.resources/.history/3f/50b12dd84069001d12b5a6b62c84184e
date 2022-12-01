@@ -1,0 +1,16 @@
+package diagram.exam;
+
+public class BuyCar {
+
+
+	private Driver bestDriver;
+
+	public BuyCar(Driver d) {
+
+		this.bestDriver = d;
+
+//		new Benz();
+
+	}
+
+}

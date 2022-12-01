@@ -1,0 +1,7 @@
+
+public class Tv {
+
+	int volume;
+	int channel;
+	
+}
